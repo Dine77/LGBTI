@@ -1,37 +1,36 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const morgan = require('morgan');
-require('dotenv').config();
+// backend/server.js
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+
+import surveyRoutes from "./routes/surveyRoutes.js";
+import optionsRoutes from "./routes/optionsRoutes.js";
+import mapRoutes from "./routes/mapRoutes.js";
+import dataRoutes from "./routes/dataRoutes.js";
+
+
+dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 5000;
-
-// Middleware
 app.use(cors());
 app.use(express.json());
-app.use(morgan('dev'));
+
+// MongoDB Connection
+mongoose
+    .connect(process.env.MONGO_URI)
+    .then(() => console.log("✅ MongoDB Connected"))
+    .catch((err) => console.error("❌ MongoDB Error:", err));
 
 // Routes
-const researchProgressRoutes = require('./src/routes/researchProgress');
-app.use('/api/research', researchProgressRoutes);
+app.use("/api/surveys", surveyRoutes);
+app.use("/api/options", optionsRoutes);
+app.use("/api/map-data", mapRoutes);
+app.use("/api", dataRoutes);
 
-app.get('/health', (req, res) => res.json({ status: 'ok' }));
+// Test route
+app.get("/", (req, res) => res.send("API is running..."));
 
-// Connect to MongoDB and start server
-async function start() {
-    const mongoUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/lgbt_db';
-    try {
-        await mongoose.connect(mongoUri, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true
-        });
-        console.log('Connected to MongoDB');
-        app.listen(port, () => console.log(`Server running on port ${port}`));
-    } catch (err) {
-        console.error('Failed to connect to MongoDB', err);
-        process.exit(1);
-    }
-}
-
-start();
+// Start server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
