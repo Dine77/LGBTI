@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -14,32 +15,67 @@ const Login = () => {
     }
 
     try {
-      // Example: Adjust this URL to your backend (Express API)
-      const response = await fetch("/api/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password }),
-      });
+      // Use POST and send credentials in the request body.
+      // If your backend expects GET with query params, switch to axios.get and pass { params: { username, password } }
+      const response = await axios.post("/api/login", { username, password });
 
-      const result = await response.text();
 
-      if (result.trim() === "user") {
-        window.location.href = "/ResearchOverview";
-      } else if (result.trim() === "Client") {
-        window.location.href = "/ResearchOverviewC";
-      } else if (result.trim() === "allow") {
-        localStorage.setItem("statename", username);
-        window.location.href = "/statewiseprogress";
-      } else if (result.trim() === "notallow") {
-        setErrorType("notallow");
-      } else if (result.trim() === "invaild") {
-        setErrorType("invalid");
-      } else {
-        setErrorType("server");
+      console.log('Login response:', response.data);
+
+      const result = response.data;
+
+      // If backend returns an object with a token (JWT), store it and redirect
+      if (result && typeof result === 'object' && result.token) {
+        localStorage.setItem('token', result.token);
+        // default redirect after successful login
+        window.location.href = '/ResearchOverview';
+        return;
       }
+
+      // If backend returns a simple status string, handle legacy responses
+      if (typeof result === 'string') {
+        const trimmed = result.trim();
+        if (trimmed === 'user') {
+          // after successful login
+          localStorage.setItem("token", result.token);  // token from backend
+          window.location.href = '/ResearchOverview';
+          return;
+        }
+        if (trimmed === 'Client') {
+          localStorage.setItem("token", result.token);  // token from backend
+          window.location.href = '/ResearchOverviewC';
+          return;
+        }
+        if (trimmed === 'allow') {
+          localStorage.setItem("token", result.token);  // token from backend
+          localStorage.setItem('statename', username);
+          window.location.href = '/statewiseprogress';
+          return;
+        }
+        if (trimmed === 'notallow') {
+          setErrorType('notallow');
+          return;
+        }
+        if (trimmed === 'invaild' || trimmed === 'invalid') {
+          setErrorType('invalid');
+          return;
+        }
+      }
+
+      // Fallback to server error
+      setErrorType('server');
     } catch (err) {
-      console.error("Login failed:", err);
-      setErrorType("server");
+      console.error('Login failed:', err);
+      // If backend returned a 4xx with message, try to surface it
+      if (err.response && err.response.data) {
+        // optional: set different error types based on response
+        const msg = err.response.data.message || err.response.data.error || '';
+        if (msg.toLowerCase().includes('invalid')) setErrorType('invalid');
+        else if (msg.toLowerCase().includes('not allow') || msg.toLowerCase().includes('notallow')) setErrorType('notallow');
+        else setErrorType('server');
+      } else {
+        setErrorType('server');
+      }
     }
   };
 
@@ -60,11 +96,12 @@ const Login = () => {
       {/* Login Container */}
       <div className="w-[50%] h-[55%] flex flex-row justify-center items-center">
         {/* Left Logo Box */}
-        <div className="bg-white z-10 shadow-md w-[35%] h-[80%] relative flex justify-center items-center rounded-md translate-x-3">
+        <div className="bg-white z-10 shadow-md w-[35%] h-[50%] relative flex flex-col justify-center items-center rounded-md translate-x-3">
+          <div className="w-[80%] flex justify-center items-center py-4 text-[#2e469c] font-bold text-lg">LGBTI Survey Dashboard</div>
           <img
             className="w-[60%]"
-            src="./Images/NITI_Aayog_logo.png"
-            alt="NITI AAYOG"
+            src="./Images/LGBTI.png"
+            alt="LGBTI Logo"
           />
           <div className="w-2 h-2 rounded-full bg-[#2e469c] absolute top-2 left-2"></div>
           <div className="w-2 h-2 rounded-full bg-[#2e469c] absolute top-2 right-2"></div>
@@ -169,7 +206,7 @@ const Login = () => {
                       )}
                       {errorType === "server" && (
                         <div className="text-[#d60e2f] font-semibold text-[16px] py-2">
-                          Server error. Please try again.
+                          Username or Password is incorrect
                         </div>
                       )}
                     </div>

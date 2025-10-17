@@ -1,6 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Sidebar() {
+  const navigate = useNavigate(); // ✅ must be inside component
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    navigate("/login");
+  };
+
   const navItems = [
     {
       name: "Research Overview",
@@ -37,9 +44,6 @@ export default function Sidebar() {
             <p className="text-white text-[0.85rem] text-center w-full pl-12">
               Dashboard
             </p>
-            {/* <p className="text-white text-[0.85rem] text-center w-full pl-12">
-              Dashboard
-            </p> */}
           </div>
           <div className="w-[20%] bg-[#009d9c] rounded-tl-lg rounded-bl-lg rounded-tr-[4rem] rounded-br-[4rem]" />
         </div>
@@ -52,8 +56,7 @@ export default function Sidebar() {
             key={idx}
             to={item.to}
             className={({ isActive }) =>
-              `w-[75%] flex justify-center items-center flex-col rounded-lg ${
-                isActive ? "bg-[#009d9c]" : "bg-black/25 hover:bg-[#009d9c]"
+              `w-[75%] flex justify-center items-center flex-col rounded-lg ${isActive ? "bg-[#009d9c]" : "bg-black/25 hover:bg-[#009d9c]"
               }`
             }
           >
@@ -71,8 +74,8 @@ export default function Sidebar() {
       <div className="relative h-[8%] flex justify-center items-center w-[70%] rounded-t-full">
         <div className="bg-black/25 w-full h-full rounded-tl-full rounded-tr-full blur-lg" />
         <a
-          href="/login"
-          className="absolute bottom-0 flex justify-center items-center pb-2"
+          onClick={handleLogout}
+          className="absolute bottom-0 flex justify-center items-center pb-2 cursor-pointer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -113,14 +113,11 @@ export default function Data() {
 
       {/* Main */}
       <section className="col-start-2 col-end-[-1] row-start-2 row-end-[-1] p-4">
-        <div className="flex justify-between items-center mb-3">
-          <h2 className="text-lg font-semibold text-[#2E469C]">
-            Completed Survey Data
-          </h2>
+        <div className="flex justify-end items-center mt-4 mb-3">
           <div className="flex gap-3">
             <button
               onClick={() => downloadExcel(false)}
-              className="bg-[#2E469C] text-white px-4 py-2 rounded-lg flex items-center gap-2"
+              className="bg-[#2E469C] text-white px-4 py-2 rounded-lg flex items-center gap-2 cursor-pointer"
             >
               <FontAwesomeIcon icon={faDownload} />
               Download Codes
@@ -128,7 +125,7 @@ export default function Data() {
 
             <button
               onClick={() => downloadExcel(true)}
-              className="bg-green-600 text-white px-4 py-2 rounded-lg flex items-center gap-2"
+              className="bg-[#009d9c] text-white px-4 py-2 rounded-lg flex items-center gap-2 cursor-pointer"
             >
               <FontAwesomeIcon icon={faDownload} />
               Download Labels
@@ -137,43 +134,57 @@ export default function Data() {
         </div>
 
         {/* Data Table */}
-        <div className="overflow-auto border border-gray-300 rounded-lg shadow-md">
-          <table className="w-full border-collapse text-xs">
-            <thead className="bg-[#163a85] text-white sticky top-0">
+        <div className="overflow-auto border max-h-[80vh] border-gray-300 rounded-xl shadow-lg backdrop-blur-sm">
+          <table className="w-full border-collapse text-sm text-gray-700">
+            {/* ===== Header ===== */}
+            <thead className="sticky top-0 z-10 bg-[#2E469C] text-white shadow-md">
               <tr>
                 {columns.map((col, i) => (
-                  <th key={i} className="px-2 py-2 border whitespace-nowrap">
+                  <th
+                    key={i}
+                    className="px-4 py-3 border-b border-blue-100 text-center font-semibold text-[0.9rem] max-w-[150px] truncate tracking-wide"
+                    title={headers[col] || col}
+                  >
                     {headers[col] || col}
                   </th>
                 ))}
               </tr>
             </thead>
+
+            {/* ===== Body ===== */}
             <tbody>
               {isLoading ? (
                 <tr>
                   <td
                     colSpan={columns.length}
-                    className="text-center py-4 text-gray-500"
+                    className="text-center py-6 text-gray-500 italic"
                   >
-                    Loading...
+                    Loading data...
                   </td>
                 </tr>
               ) : data.length === 0 ? (
                 <tr>
                   <td
                     colSpan={columns.length}
-                    className="text-center py-4 text-gray-500"
+                    className="text-center py-6 text-gray-500 italic"
                   >
                     No completed data found.
                   </td>
                 </tr>
               ) : (
                 data.map((row, i) => (
-                  <tr key={i} className="odd:bg-white even:bg-gray-50">
+                  <tr
+                    key={i}
+                    className={`transition-colors ${i % 2 === 0
+                      ? "bg-white hover:bg-blue-50/80"
+                      : "bg-gray-100 hover:bg-blue-50/80"
+                      }`}
+                  >
                     {columns.map((col) => (
                       <td
                         key={col}
-                        className="px-2 py-1 border text-center whitespace-nowrap"
+                        className="px-4 py-2 border-b border-gray-200 text-center whitespace-nowrap max-w-[150px] truncate"
+                        title={row[col] ?? ""}
                       >
                         {row[col] ?? ""}
                       </td>

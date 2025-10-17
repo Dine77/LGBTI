@@ -21,9 +21,9 @@ const ResearchOverview = () => {
       <Header />
       <Sidebar />
       {/* Main Section */}
-      <section className="grid grid-cols-1 grid-rows-[65%_35%] relative">
+      <section className="grid grid-cols-1 grid-rows-[15%_70%_15%] relative">
         {/* Top Four Cards */}
-        <div className="row-start-1 row-end-2 col-start-1 col-end-[-1] grid grid-cols-[50%_50%] grid-rows-[50%_50%] gap-2 w-full h-full">
+        <div className="row-start-2 row-end-2 col-start-1 col-end-[-1] grid grid-cols-[50%_50%] grid-rows-[50%_50%] gap-2 w-full h-full">
           {/* About the Project */}
           <div className="row-start-1 row-end-2 col-start-1 col-end-2 flex justify-end flex-wrap gap-x-4 gap-y-4">
             <div className="relative rounded-tl-lg rounded-br-lg rounded-tr-[6rem] rounded-bl-[6rem] h-full w-[60%] bg-[#009d9c]/30 flex items-center justify-start gap-2 flex-col text-center">
@@ -31,10 +31,9 @@ const ResearchOverview = () => {
                 About the Project
               </p>
               <p className="w-[75%] h-[75%] text-[0.9rem]">
-                Evaluation of Centrally Sponsored Schemes in Water Resources,
-                Environment and Forest sector, assessing their effectiveness and
-                deriving actionable insights for the Development Monitoring and
-                Evaluation Office.
+                Evaluation of barriers and opportunities for financial inclusion of LGBTI individuals in India and
+                derivation of actionable insights to create products and services that better meet the needs of the LGBTI community
+                for the International Finance Corporation (IFC), a member of the World Bank Group.
               </p>
               <div className="rounded-full absolute p-4 top-[-20%] left-[-10%] bg-[#233577] border-8 border-white">
                 <svg
@@ -117,7 +116,7 @@ const ResearchOverview = () => {
               <p className="w-[75%] h-[75%] text-[0.9rem]">
                 This study will use a combination of meta-analysis and field
                 research to gather insights including consult stakeholders,
-                conduct surveys among farmers in rural villages.
+                conduct surveys among the LGBTI individuals in India.
               </p>
               <div className="rounded-full absolute p-4 bottom-[-20%] right-[-10%] bg-[#233577] border-8 border-white">
                 <svg
@@ -137,82 +136,6 @@ const ResearchOverview = () => {
         </div>
 
         {/* Coverage Table */}
-        <div className="row-start-2 row-end-[-1] col-start-1 col-end-[-1] gap-4 flex justify-center items-center flex-col">
-          <p className="w-full text-center text-[1.625rem] font-bold text-[#767676]">
-            Coverage
-          </p>
-
-          <table className="bg-[#d8a877]/30 w-[80%] rounded-md p-4">
-            <thead className="border-b-[1px] border-[#2e469c]">
-              <tr className="text-[#233577] text-[1.15rem]">
-                <th></th>
-                <th className="text-left px-4 py-2 font-bold">Sector</th>
-                <th className="text-left px-4 py-2 font-bold">
-                  No. of Schemes
-                </th>
-                <th className="text-left px-4 py-2 font-bold">No. of States</th>
-                <th className="text-left px-4 py-2 font-bold">HH Surveys</th>
-                <th className="text-left px-4 py-2 font-bold">KIIs</th>
-                <th className="text-left px-4 py-2 font-bold">FGDs</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="text-[1.15rem] text-[#2e469c] font-semibold">
-                <td className="px-4 py-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="#2E469C"
-                      d="M12 22q-3.425 0-5.712-2.35T4 13.8q0-1.55.7-3.1t1.75-2.975T8.725 5.05T11 2.875q.2-.2.463-.287T12 2.5t.538.088t.462.287q1.05.925 2.275 2.175t2.275 2.675T19.3 10.7t.7 3.1q0 3.5-2.287 5.85T12 22m.275-3q.3-.025.513-.238T13 18.25q0-.35-.225-.562T12.2 17.5q-1.025.075-2.175-.562t-1.45-2.313q-.05-.275-.262-.45T7.825 14q-.35 0-.575.263t-.15.612q.425 2.275 2 3.25t3.175.875"
-                    />
-                  </svg>
-                </td>
-                <td className="px-4 py-2">Water Resources</td>
-                <td
-                  className="px-4 py-2 text-center cursor-pointer underline"
-                  onClick={() => openDialog("WRS")}
-                >
-                  8
-                </td>
-                <td className="px-4 py-2 text-center">12</td>
-                <td className="px-4 py-2 text-center">1500</td>
-                <td className="px-4 py-2 text-center">126</td>
-                <td className="px-4 py-2 text-center">240</td>
-              </tr>
-
-              <tr className="text-[1.15rem] text-[#009d9c] font-semibold">
-                <td className="px-4 py-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="26"
-                    height="26"
-                    viewBox="0 0 100 100"
-                  >
-                    <path
-                      fill="#009D9C"
-                      d="m91.963 80.982l.023-.013l-7.285-12.617h2.867v-.013c.598 0 1.083-.484 1.083-1.082c0-.185-.059-.351-.14-.503l.019-.011l-6.737-11.669h1.639v-.009a.773.773 0 0 0 .773-.772a.76.76 0 0 0-.1-.359l.013-.008l-9.802-16.979l-.01.006a1.32 1.32 0 0 0-1.186-.754c-.524 0-.968.311-1.185.752l-.005-.003l-9.802 16.978l.002.001a.75.75 0 0 0-.105.366c0 .426.346.772.773.772v.009h1.661l-6.737 11.669l.003.001a1.06 1.06 0 0 0-.147.513c0 .598.485 1.082 1.083 1.082v.013h2.894l-2.1 3.638l-8.399-14.548h4.046v-.018c.844 0 1.528-.685 1.528-1.528c0-.26-.071-.502-.186-.717l.015-.009l-9.507-16.467h2.313v-.012a1.09 1.09 0 0 0 1.091-1.092c0-.186-.059-.353-.141-.506l.019-.011L36.4 13.125l-.005.003a1.87 1.87 0 0 0-1.683-1.06c-.758 0-1.408.452-1.704 1.1L19.201 37.082l.003.002a1.06 1.06 0 0 0-.148.516a1.09 1.09 0 0 0 1.09 1.092v.012h2.345l-9.395 16.272a1.5 1.5 0 0 0-.316.92c0 .844.685 1.528 1.528 1.528v.018h4.084L8.252 75.007c-.24.314-.387.702-.387 1.128c0 1.032.838 1.87 1.871 1.87v.021h19.779v8.43c0 .815.661 1.477 1.476 1.477h7.383c.815 0 1.477-.661 1.477-1.477v-8.43h16.12l-1.699 2.943l.003.002c-.104.189-.18.396-.18.628c0 .732.593 1.325 1.325 1.325v.015h14.016v3.941c0 .578.469 1.046 1.046 1.046h5.232c.578 0 1.046-.468 1.046-1.046v-3.941h14.05v-.015c.732 0 1.326-.593 1.326-1.325a1.3 1.3 0 0 0-.173-.617"
-                    />
-                  </svg>
-                </td>
-                <td className="px-4 py-2">Environment and Forest</td>
-                <td
-                  className="px-4 py-2 text-center cursor-pointer underline"
-                  onClick={() => openDialog("EFS")}
-                >
-                  3
-                </td>
-                <td className="px-4 py-2 text-center">12</td>
-                <td className="px-4 py-2 text-center">1080</td>
-                <td className="px-4 py-2 text-center">126</td>
-                <td className="px-4 py-2 text-center">88</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </section>
 
       {/* Dialogs */}
