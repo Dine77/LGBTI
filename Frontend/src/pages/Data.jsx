@@ -117,7 +117,7 @@ export default function Data() {
           <div className="flex gap-3">
             <button
               onClick={() => downloadExcel(false)}
-              className="bg-[#2E469C] text-white px-4 py-2 rounded-lg flex items-center gap-2 cursor-pointer"
+              className="bg-gradient-to-r from-[#E91E63] to-[#9C27B0] hover:from-[#C2185B] hover:to-[#7B1FA2] text-white px-4 py-2 rounded-lg flex items-center gap-2 cursor-pointer"
             >
               <FontAwesomeIcon icon={faDownload} />
               Download Codes
@@ -125,7 +125,7 @@ export default function Data() {
 
             <button
               onClick={() => downloadExcel(true)}
-              className="bg-[#009d9c] text-white px-4 py-2 rounded-lg flex items-center gap-2 cursor-pointer"
+              className="bg-gradient-to-r from-[#9C27B0] to-[#E91E63] hover:from-[#7B1FA2] hover:to-[#C2185B] text-white px-4 py-2 rounded-lg flex items-center gap-2 cursor-pointer"
             >
               <FontAwesomeIcon icon={faDownload} />
               Download Labels
@@ -134,66 +134,68 @@ export default function Data() {
         </div>
 
         {/* Data Table */}
-        <div className="overflow-auto border max-h-[80vh] border-gray-300 rounded-xl shadow-lg backdrop-blur-sm">
-          <table className="w-full border-collapse text-sm text-gray-700">
-            {/* ===== Header ===== */}
-            <thead className="sticky top-0 z-10 bg-[#2E469C] text-white shadow-md">
-              <tr>
-                {columns.map((col, i) => (
-                  <th
-                    key={i}
-                    className="px-4 py-3 border-b border-blue-100 text-center font-semibold text-[0.9rem] max-w-[150px] truncate tracking-wide"
-                    title={headers[col] || col}
-                  >
-                    {headers[col] || col}
-                  </th>
-                ))}
-              </tr>
-            </thead>
+        <div className="overflow-hidden rounded-xl border-3 border-[#6538b0] shadow-lg">
+          <div className="overflow-auto max-h-[78vh] backdrop-blur-sm">
+            <table className="w-full border-collapse text-sm text-gray-700">
+              {/* ===== Header ===== */}
+              <thead className="sticky top-0 z-10 bg-[#6538b0] text-white shadow-md">
+                <tr>
+                  {columns.map((col, i) => (
+                    <th
+                      key={i}
+                      className="px-4 py-3 border-b border-blue-100 text-center font-semibold text-[0.9rem] max-w-[150px] truncate tracking-wide"
+                      title={headers[col] || col}
+                    >
+                      {headers[col] || col}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
 
-            {/* ===== Body ===== */}
-            <tbody>
-              {isLoading ? (
-                <tr>
-                  <td
-                    colSpan={columns.length}
-                    className="text-center py-6 text-gray-500 italic"
-                  >
-                    Loading data...
-                  </td>
-                </tr>
-              ) : data.length === 0 ? (
-                <tr>
-                  <td
-                    colSpan={columns.length}
-                    className="text-center py-6 text-gray-500 italic"
-                  >
-                    No completed data found.
-                  </td>
-                </tr>
-              ) : (
-                data.map((row, i) => (
-                  <tr
-                    key={i}
-                    className={`transition-colors ${i % 2 === 0
-                      ? "bg-white hover:bg-blue-50/80"
-                      : "bg-gray-100 hover:bg-blue-50/80"
-                      }`}
-                  >
-                    {columns.map((col) => (
-                      <td
-                        key={col}
-                        className="px-4 py-2 border-b border-gray-200 text-center whitespace-nowrap max-w-[150px] truncate"
-                        title={row[col] ?? ""}
-                      >
-                        {row[col] ?? ""}
-                      </td>
-                    ))}
+              {/* ===== Body ===== */}
+              <tbody>
+                {isLoading ? (
+                  <tr>
+                    <td
+                      colSpan={columns.length}
+                      className="text-center py-6 text-gray-500 italic"
+                    >
+                      Loading data...
+                    </td>
                   </tr>
-                ))
-              )}
-            </tbody>
-          </table>
+                ) : data.length === 0 ? (
+                  <tr>
+                    <td
+                      colSpan={columns.length}
+                      className="text-center py-6 text-gray-500 italic"
+                    >
+                      No completed data found.
+                    </td>
+                  </tr>
+                ) : (
+                  data.map((row, i) => (
+                    <tr
+                      key={i}
+                      className={`transition-colors ${i % 2 === 0
+                          ? "bg-white hover:bg-blue-50/80"
+                          : "bg-gray-100 hover:bg-blue-50/80"
+                        }`}
+                    >
+                      {columns.map((col) => (
+                        <td
+                          key={col}
+                          className="px-4 py-2 border-b border-gray-200 text-center whitespace-nowrap max-w-[150px] truncate"
+                          title={row[col] ?? ""}
+                        >
+                          {row[col] ?? ""}
+                        </td>
+                      ))}
+                    </tr>
+                  ))
+                )}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </main>

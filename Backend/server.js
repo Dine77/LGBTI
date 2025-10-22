@@ -8,6 +8,7 @@ import jwt from "jsonwebtoken";
 import surveyRoutes from "./routes/surveyRoutes.js";
 import optionsRoutes from "./routes/optionsRoutes.js";
 import dashoptionsRoutes from "./routes/dashoptionsRoutes.js";
+import dashboardquestion from "./routes/chartRoutes.js"
 import mapRoutes from "./routes/mapRoutes.js";
 import dataRoutes from "./routes/dataRoutes.js";
 import loginRoutes from "./routes/loginRoutes.js";
@@ -30,7 +31,9 @@ app.use("/api/options", optionsRoutes);
 app.use("/api/dash-options", dashoptionsRoutes);
 app.use("/api/map-data", mapRoutes);
 app.use("/api", dataRoutes);
+app.use("/api", dashboardquestion); // ✅ all /api/* endpoints come from chartRoutes
 app.use("/api/login", loginRoutes);
+
 
 // ✅ LOGIN ROUTE (POST)
 // app.post("/api/login", async (req, res) => {

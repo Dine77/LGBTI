@@ -1,131 +1,91 @@
 import ReactECharts from "echarts-for-react";
 
-const BarChartVerti = () => {
+// 📊 Vertical Bar Chart
+const BarChartVerti = ({ data = [] }) => {
     const option = {
+        tooltip: { trigger: "axis", axisPointer: { type: "shadow" } },
+        grid: { top: "5%", left: "10%", right: "10%", bottom: "10%", containLabel: true },
         xAxis: {
             type: "category",
-            data: ["Daily", "A few times a week", "Once a week", "Once a month", "Once in few months", "Rarely", "Never"],
+            data: data.map((d) => d.name),
+            axisLabel: { rotate: 30, fontSize: 10 },
         },
-        grid: {
-            top: "5%",
-            left: "10%",
-            right: "10%",
-            bottom: "5%",
-            containLabel: true,
-        },
-        yAxis: {
-            type: "value",
-        },
+        yAxis: { type: "value" },
         series: [
             {
-                data: [120, 200, 150, 80, 70, 110, 130],
+                data: data.map((d) => parseFloat(d.value)),
                 type: "bar",
+                barWidth: "60%",
             },
         ],
     };
 
-    return (
-        <ReactECharts option={option} style={{ height: "100%", width: "100%" }} />
-    );
+    return <ReactECharts option={option} style={{ height: "100%", width: "100%" }} />;
 };
 
-const BarChartHori = () => {
+// 📊 Horizontal Bar Chart
+const BarChartHori = ({ data = [] }) => {
     const option = {
-        xAxis: {
-            type: "value",
-        },
-        grid: {
-            top: "5%",
-            left: "5%",
-            right: "10%",
-            bottom: "5%",
-            containLabel: true,
-        },
+        tooltip: { trigger: "axis", axisPointer: { type: "shadow" } },
+        grid: { top: "5%", left: "10%", right: "10%", bottom: "10%", containLabel: true },
+        xAxis: { type: "value" },
         yAxis: {
             type: "category",
-            data: ["Basic Phone", "Smartphone", "Laptop", "Desktop", "Tablet"],
+            data: data.map((d) => d.name),
             inverse: true,
+            axisLabel: { fontSize: 10 },
         },
         series: [
             {
-                data: [120, 200, 150, 80, 70],
+                data: data.map((d) => parseFloat(d.value)),
                 type: "bar",
+                barWidth: "60%",
             },
         ],
     };
 
-    return (
-        <ReactECharts option={option} style={{ height: "100%", width: "100%" }} />
-    );
+    return <ReactECharts option={option} style={{ height: "100%", width: "100%" }} />;
 };
 
-const DonutChart = () => {
+// 🍩 Donut Chart
+const DonutChart = ({ data = [] }) => {
     const option = {
-        tooltip: {
-            trigger: "item",
-        },
-        legend: {
-            top: "5%",
-            left: "center",
-        },
+        tooltip: { trigger: "item" },
+        legend: { top: "5%", left: "center" },
         series: [
             {
-                name: "Access From",
+                name: "Responses",
                 type: "pie",
-                radius: ["40%", "70%"],
-                avoidLabelOverlap: false,
-                itemStyle: {
-                    borderRadius: 10,
-                    borderColor: "#fff",
-                    borderWidth: 2,
-                },
+                radius: ["30%", "50%"],
+                itemStyle: { borderRadius: 10, borderColor: "#fff", borderWidth: 2 },
                 label: {
-                    show: false,
-                    position: "center",
+                    formatter: "{b}: {d}%",
+                    fontSize: 11,
                 },
-                emphasis: {
-                    label: {
-                        show: true,
-                        fontSize: 40,
-                        fontWeight: "bold",
-                    },
-                },
-                labelLine: {
-                    show: false,
-                },
-                data: [
-                    { value: 1048, name: "Female" },
-                    { value: 735, name: "Male" },
-                    { value: 580, name: "Intersex" },
-                ],
+                data: data.map((d) => ({ name: d.name, value: parseFloat(d.value) })),
             },
         ],
     };
-    return (
-        <ReactECharts option={option} style={{ height: "100%", width: "100%" }} />
-    );
+
+    return <ReactECharts option={option} style={{ height: "100%", width: "100%" }} />;
 };
 
-const PieChart = () => {
+// 🥧 Pie Chart
+const PieChart = ({ data = [] }) => {
+    console.log(data);
     const option = {
-        tooltip: {
-            trigger: "item",
-        },
-        legend: {
-            orient: "vertical",
-            left: "left",
-        },
+        tooltip: { trigger: "item" },
+        legend: { orient: "vertical", left: "left" },
         series: [
             {
-                name: "Access From",
+                name: "Responses",
                 type: "pie",
                 radius: "50%",
-                data: [
-                    { value: 1048, name: "Lesbian" },
-                    { value: 735, name: "Gay" },
-                    { value: 580, name: "Bisexual" },
-                    { value: 484, name: "Others" },
-                ],
+                label: {
+                    formatter: "{b}: {d}%",
+                    fontSize: 11,
+                },
+                data: data.map((d) => ({ name: d.name, value: parseFloat(d.value) })),
                 emphasis: {
                     itemStyle: {
                         shadowBlur: 10,
@@ -136,8 +96,8 @@ const PieChart = () => {
             },
         ],
     };
-    return (
-        <ReactECharts option={option} style={{ height: "100%", width: "100%" }} />
-    );
+
+    return <ReactECharts option={option} style={{ height: "100%", width: "100%" }} />;
 };
+
 export { BarChartVerti, BarChartHori, DonutChart, PieChart };

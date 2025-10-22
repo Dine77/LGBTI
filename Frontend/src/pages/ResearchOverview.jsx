@@ -22,20 +22,38 @@ const ResearchOverview = () => {
       <Sidebar />
       {/* Main Section */}
       <section className="grid grid-cols-1 grid-rows-[15%_70%_15%] relative">
+        {/* 🔹 Show QNR Button - Top Right Corner */}
+        {/* 🔹 Show QNR Button - Top Right Corner */}
+        <button
+          onClick={() => window.open("/QNR/questionnaire.pdf", "_blank")}// 👉 Replace this with your actual logic
+          className="absolute top-6 right-8 bg-gradient-to-r from-[#E91E63] to-[#9C27B0] hover:from-[#C2185B] hover:to-[#7B1FA2] text-white px-4 py-2 rounded-lg flex items-center gap-2 cursor-pointer shadow-md transition-all duration-300 z-50"
+        >
+          {/* 🔹 Optional Icon (Document) */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H13V3.5zM8 13h8v2H8v-2zm0 4h5v2H8v-2z" />
+          </svg>
+          <span className="font-medium">Show QNR</span>
+        </button>
+
+
         {/* Top Four Cards */}
         <div className="row-start-2 row-end-2 col-start-1 col-end-[-1] grid grid-cols-[50%_50%] grid-rows-[50%_50%] gap-2 w-full h-full">
           {/* About the Project */}
           <div className="row-start-1 row-end-2 col-start-1 col-end-2 flex justify-end flex-wrap gap-x-4 gap-y-4">
-            <div className="relative rounded-tl-lg rounded-br-lg rounded-tr-[6rem] rounded-bl-[6rem] h-full w-[60%] bg-[#009d9c]/30 flex items-center justify-start gap-2 flex-col text-center">
+            <div className="relative rounded-tl-lg rounded-br-lg rounded-tr-[6rem] rounded-bl-[6rem] h-full w-[60%] bg-gradient-to-br from-[#FFB3D9] to-[#FF6B9D] flex items-center justify-start gap-2 flex-col text-center shadow-lg">
               <p className="w-[75%] h-[25%] text-[1.275rem] text-[#2e469c] font-semibold">
                 About the Project
               </p>
               <p className="w-[75%] h-[75%] text-[0.9rem]">
-                Evaluation of barriers and opportunities for financial inclusion of LGBTI individuals in India and
-                derivation of actionable insights to create products and services that better meet the needs of the LGBTI community
-                for the International Finance Corporation (IFC), a member of the World Bank Group.
+                The study is to develop an evidence-based business case for LGBTI-inclusive banking practices, focusing on tailored products, services, and investment structures for the LGBTI community. It intends to bridge the gap in product development and service delivery by enhancing the understanding of the unique needs of diverse LGBTI individuals.
               </p>
-              <div className="rounded-full absolute p-4 top-[-20%] left-[-10%] bg-[#233577] border-8 border-white">
+              <div className="rounded-full absolute p-4 top-[-20%] left-[-10%] bg-gradient-to-br from-[#FF6B9D] to-[#C2185B] border-8 border-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="46"
@@ -53,17 +71,14 @@ const ResearchOverview = () => {
 
           {/* Organisation */}
           <div className="row-start-1 row-end-2 col-start-2 col-end-[-1] flex justify-start">
-            <div className="relative rounded-tr-lg rounded-bl-lg rounded-tl-[6rem] rounded-br-[6rem] h-full w-[60%] bg-[#009d9c]/30 flex items-center justify-start gap-2 flex-col text-center">
+            <div className="relative rounded-tr-lg rounded-bl-lg rounded-tl-[6rem] rounded-br-[6rem] h-full w-[60%] bg-gradient-to-br from-[#B3E5FC] to-[#4FC3F7] shadow-lg flex items-center justify-start gap-2 flex-col text-center">
               <p className="w-[75%] h-[25%] text-[1.275rem] text-[#2e469c] font-semibold">
                 Organisation
               </p>
               <p className="w-[75%] h-[75%] text-[0.9rem]">
-                Ipsos, a global market research firm, is partnering with the
-                Development Monitoring and Evaluation Office for project
-                execution, handling survey implementation, data collection, and
-                dashboard development.
+                International Finance Corporation (IFC), a member of the World Bank Group has commissioned Ipsos Research Private Limited to conduct an independent study on financial inclusion for gender-diverse populations.
               </p>
-              <div className="rounded-full absolute p-4 top-[-20%] right-[-10%] bg-[#233577] border-8 border-white">
+              <div className="rounded-full absolute p-4 top-[-20%] right-[-10%] bg-gradient-to-bl from-[#4FC3F7] to-[#067db5] border-8 border-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="46"
@@ -81,17 +96,14 @@ const ResearchOverview = () => {
 
           {/* Objectives */}
           <div className="row-start-2 row-end-[-1] col-start-1 col-end-2 flex justify-end">
-            <div className="relative rounded-tr-lg rounded-bl-lg rounded-tl-[6rem] rounded-br-[6rem] h-full w-[60%] bg-[#009d9c]/30 flex items-center justify-start gap-2 flex-col text-center">
+            <div className="relative rounded-tr-lg rounded-bl-lg rounded-tl-[6rem] rounded-br-[6rem] h-full w-[60%] bg-gradient-to-br from-[#FFE082] to-[#FFD54F] shadow-lg flex items-center justify-start gap-2 flex-col text-center">
               <p className="w-[75%] h-[25%] text-[1.275rem] text-[#2e469c] font-semibold">
                 Objectives
               </p>
               <p className="w-[75%] h-[75%] text-[0.9rem]">
-                To enable progress monitoring, data analysis, and efficient
-                decision-making by developing tools and a web dashboard portal
-                that ensures real-time updates and provides actionable insights
-                for both qualitative and quantitative evaluations.
+                The study covers both supply and demand side perspective. It aims to identify advisory and investment opportunities that support financial institutions (FIs) in establishing inclusive and equitable value propositions to reduce discrimination against LGBTI community. By investigating the usages and challenges faced by LGBTI individuals with regard to financial services, the study seeks to enhance understanding of their unique needs in banking and financial aspects.
               </p>
-              <div className="rounded-full absolute p-4 bottom-[-20%] left-[-10%] bg-[#233577] border-8 border-white">
+              <div className="rounded-full absolute p-4 bottom-[-20%] left-[-10%] bg-gradient-to-tr from-[#FF9800] to-[#E65100] border-8 border-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="46"
@@ -109,16 +121,14 @@ const ResearchOverview = () => {
 
           {/* Methodology */}
           <div className="row-start-2 row-end-[-1] col-start-2 col-end-[-1] flex justify-start">
-            <div className="relative rounded-tl-lg rounded-br-lg rounded-tr-[6rem] rounded-bl-[6rem] h-full w-[60%] bg-[#009d9c]/30 flex items-center justify-start gap-2 flex-col text-center">
+            <div className="relative rounded-tl-lg rounded-br-lg rounded-tr-[6rem] rounded-bl-[6rem] h-full w-[60%] bg-gradient-to-br from-[#A5D6A7] to-[#66BB6A] flex items-center justify-start gap-2 flex-col text-center">
               <p className="w-[75%] h-[25%] text-[1.275rem] text-[#2e469c] font-semibold">
                 Methodology
               </p>
               <p className="w-[75%] h-[75%] text-[0.9rem]">
-                This study will use a combination of meta-analysis and field
-                research to gather insights including consult stakeholders,
-                conduct surveys among the LGBTI individuals in India.
+                The study adopts a mixed method design involving structured CAPI survey with LBGTI individuals and in depth interviews with financial institutions and community based organisation working with and for LGBTI communities
               </p>
-              <div className="rounded-full absolute p-4 bottom-[-20%] right-[-10%] bg-[#233577] border-8 border-white">
+              <div className="rounded-full absolute p-4 bottom-[-20%] right-[-10%] bg-gradient-to-tl from-[#66BB6A] to-[#3e8f42] border-8 border-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="46"

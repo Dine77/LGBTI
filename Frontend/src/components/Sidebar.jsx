@@ -33,11 +33,11 @@ export default function Sidebar() {
   ];
 
   return (
-    <nav className="relative row-start-1 row-end-[-1] col-start-1 col-end-2 bg-[#2e469c] rounded-tr-lg rounded-br-lg flex flex-col justify-end items-center gap-4">
+    <nav className="relative row-start-1 row-end-[-1] col-start-1 col-end-2 bg-gradient-to-b from-[#E91E63] via-[#9C27B0] to-[#673AB7] rounded-tr-lg rounded-br-lg flex flex-col justify-end items-center gap-4">
       {/* Logo */}
       <div className="h-[15%] w-[210%] flex justify-center items-end gap-4">
         <div className="h-[80%] w-full flex flex-row gap-[0.625rem]">
-          <div className="w-[100%] flex justify-center items-center flex-col bg-[#009d9c] rounded-md">
+          <div className="w-[100%] flex justify-center items-center flex-col bg-gradient-to-r from-[#4b67ca] to-[#2e469c] rounded-md">
             <p className="font-bold text-white text-[1.15rem] text-center w-full pl-12">
               LGBTI
             </p>
@@ -45,7 +45,7 @@ export default function Sidebar() {
               Dashboard
             </p>
           </div>
-          <div className="w-[20%] bg-[#009d9c] rounded-tl-lg rounded-bl-lg rounded-tr-[4rem] rounded-br-[4rem]" />
+          <div className="w-[20%] bg-gradient-to-r from-[#2e469c] to-[#2c4497] rounded-tl-lg rounded-bl-lg rounded-tr-[4rem] rounded-br-[4rem]" />
         </div>
       </div>
 
@@ -56,7 +56,8 @@ export default function Sidebar() {
             key={idx}
             to={item.to}
             className={({ isActive }) =>
-              `w-[75%] flex justify-center items-center flex-col rounded-lg ${isActive ? "bg-[#009d9c]" : "bg-black/25 hover:bg-[#009d9c]"
+              `w-[75%] flex justify-center items-center flex-col rounded-lg ${
+                isActive ? "bg-[#2e469c]" : "bg-black/25 hover:bg-[#2e469c]"
               }`
             }
           >

@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className="relative row-start-1 row-end-1 col-start-2 col-end-[-1] flex justify-center items-center">
-      <p className="text-[#767676] font-bold text-[1.875rem]">
+      <p className="text-[#2e469c] font-bold text-[1.875rem]">
         {titleMap[pathname] || "Dashboard"}
       </p>
       <img

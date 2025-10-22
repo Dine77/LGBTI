@@ -1,8 +1,8 @@
 // backend/routes/optionsRoutes.js
 import express from "express";
-import { getOptions } from "../controllers/dashoptionsController.js";
+import { getdashOptions } from "../controllers/dashoptionsController.js";
 const router = express.Router();
 
-router.get("/", getOptions);
+router.get("/", getdashOptions);
 
 export default router;

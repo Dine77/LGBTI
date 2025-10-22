@@ -7,8 +7,8 @@ import axios from "axios";
 
 // ✅ Define your API base URL properly
 axios.defaults.baseURL =
-  import.meta.env.VITE_API_URL || "https://lgbti-api-ipsos.nnet-dataviz.com";
-// "http://localhost:5000";
+  // import.meta.env.VITE_API_URL || "https://lgbti-api-ipsos.nnet-dataviz.com";
+  "http://localhost:5000";
 
 // ✅ Optional but good: add default headers
 axios.defaults.headers.common["Content-Type"] = "application/json";

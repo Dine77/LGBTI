@@ -413,77 +413,115 @@ export default function ResearchCrosstab() {
       <section className="col-start-2 col-end-[-1] row-start-2 row-end-[-1] p-4">
         <div className="flex justify-end items-center mt-4 mb-3">
           <button
-            className="flex items-center gap-2 px-3 py-1 bg-[#2E469C] text-white rounded-lg cursor-pointer"
+            className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-[#E91E63] to-[#9C27B0] hover:from-[#C2185B] hover:to-[#7B1FA2] text-white rounded-lg cursor-pointer"
             onClick={downloadExcel}
           >
             <FontAwesomeIcon icon={faDownload} /> Download Excel
           </button>
         </div>
 
-        <div className="relative overflow-auto max-h-[80vh] shadow-md rounded-lg border border-gray-300">
-          <table className="w-full border-collapse text-sm">
-            <thead className="sticky top-0 bg-[#2E469C] text-white z-20 shadow-sm">
-              <tr>
-                <th className="p-3 border border-white text-center" rowSpan={2}>
-                  Zone
-                </th>
-                <th
-                  className="p-3 border border-white text-center w-[200px]"
-                  rowSpan="2"
-                >
-                  City
-                </th>
-                <th className="p-3 border border-white text-center" rowSpan={2}>
-                  Total
-                </th>
-
-                <th className="p-3 border border-white text-center" colSpan={5}>
-                  Sub-group
-                </th>
-                <th className="p-3 border border-white text-center" colSpan={2}>
-                  Area
-                </th>
-              </tr>
-              <tr>
-                {COLUMNS.filter((c) => c !== "Total").map((col) => (
-                  <th key={col} className="p-3 border border-white text-center">
-                    {col}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-
-            <tbody>
-              {isLoading ? (
+        <div className="overflow-hidden rounded-lg border-3 border-[#6538b0] shadow-md">
+          <div className="relative overflow-auto max-h-[78vh]">
+            <table className="w-full border-collapse text-sm">
+              <thead className="sticky top-0 bg-[#6538b0] text-white z-20 shadow-sm">
                 <tr>
-                  <td colSpan={COLUMNS.length + 2} className="text-center py-6">
-                    Loading...
-                  </td>
+                  <th
+                    className="p-3 border border-white text-center"
+                    rowSpan={2}
+                  >
+                    Zone
+                  </th>
+                  <th
+                    className="p-3 border border-white text-center w-[200px]"
+                    rowSpan="2"
+                  >
+                    City
+                  </th>
+                  <th
+                    className="p-3 border border-white text-center"
+                    rowSpan={2}
+                  >
+                    Total
+                  </th>
+
+                  <th
+                    className="p-3 border border-white text-center"
+                    colSpan={5}
+                  >
+                    Sub-group
+                  </th>
+                  <th
+                    className="p-3 border border-white text-center"
+                    colSpan={2}
+                  >
+                    Area
+                  </th>
                 </tr>
-              ) : (
-                <>
-                  {tableData.map((z, zi) => {
-                    const rowSpan = z.cities.length + 1;
-                    return (
-                      <React.Fragment key={zi}>
-                        {z.cities.map((c, ci) => (
-                          <tr
-                            key={`${zi}-${ci}`}
-                            className="bg-white hover:bg-blue-50 transition-colors"
-                          >
-                            {ci === 0 && (
-                              <td
-                                rowSpan={rowSpan}
-                                className="align-middle text-center text-base px-3 py-2 font-semibold text-white bg-[#009d9c] border-r border-gray-200"
-                              >
-                                {z.zone}
+                <tr>
+                  {COLUMNS.filter((c) => c !== "Total").map((col) => (
+                    <th
+                      key={col}
+                      className="p-3 border border-white text-center"
+                    >
+                      {col}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+
+              <tbody>
+                {isLoading ? (
+                  <tr>
+                    <td
+                      colSpan={COLUMNS.length + 2}
+                      className="text-center py-6"
+                    >
+                      Loading...
+                    </td>
+                  </tr>
+                ) : (
+                  <>
+                    {tableData.map((z, zi) => {
+                      const rowSpan = z.cities.length + 1;
+                      return (
+                        <React.Fragment key={zi}>
+                          {z.cities.map((c, ci) => (
+                            <tr
+                              key={`${zi}-${ci}`}
+                              className="bg-white hover:bg-blue-50 transition-colors"
+                            >
+                              {ci === 0 && (
+                                <td
+                                  rowSpan={rowSpan}
+                                  className="align-middle text-center text-base px-3 py-2 font-semibold text-[#163a85] bg-[#ffcaf0] border-r border-gray-200"
+                                >
+                                  {z.zone}
+                                </td>
+                              )}
+                              <td className="px-3 py-2 border-r border-gray-200">
+                                {c.city}
                               </td>
-                            )}
-                            <td className="px-3 py-2 border-r border-gray-200">
-                              {c.city}
+                              <td className="px-3 py-2 text-center border-r border-gray-200">
+                                {c.cells["Total"]}
+                              </td>
+                              {COLUMNS.filter((col) => col !== "Total").map(
+                                (col) => (
+                                  <td
+                                    key={col}
+                                    className="px-3 py-2 text-center border-r border-gray-200"
+                                  >
+                                    {c.cells[col]}
+                                  </td>
+                                )
+                              )}
+                            </tr>
+                          ))}
+                          <tr className="bg-[#ffcaf0] font-semibold text-[#163a85]">
+                            <td className="px-3 py-2 text-left text-base border-r border-gray-200">
+                              Sub-total
                             </td>
                             <td className="px-3 py-2 text-center border-r border-gray-200">
-                              {c.cells["Total"]}
+                              {z.subtotals["Total"]}
                             </td>
                             {COLUMNS.filter((col) => col !== "Total").map(
                               (col) => (
@@ -491,82 +529,67 @@ export default function ResearchCrosstab() {
                                   key={col}
                                   className="px-3 py-2 text-center border-r border-gray-200"
                                 >
-                                  {c.cells[col]}
+                                  {z.subtotals[col]}
                                 </td>
                               )
                             )}
                           </tr>
-                        ))}
-                        <tr className="bg-blue-100 font-semibold text-[#163a85]">
-                          <td className="px-3 py-2 text-left text-base border-r border-gray-200">
-                            Sub-total
-                          </td>
-                          <td className="px-3 py-2 text-center border-r border-gray-200">
-                            {z.subtotals["Total"]}
-                          </td>
-                          {COLUMNS.filter((col) => col !== "Total").map(
-                            (col) => (
-                              <td
-                                key={col}
-                                className="px-3 py-2 text-center border-r border-gray-200"
-                              >
-                                {z.subtotals[col]}
-                              </td>
-                            )
-                          )}
-                        </tr>
-                      </React.Fragment>
+                        </React.Fragment>
+                      );
+                    })}
+                  </>
+                )}
+              </tbody>
+
+              <tfoot className="sticky bottom-0 bg-[#6538b0] text-white z-20">
+                <tr className="font-bold">
+                  <td
+                    colSpan={2}
+                    className="px-3 py-2 border-r border-gray-200"
+                  >
+                    Grand Total
+                  </td>
+                  <td className="px-3 py-2 text-center border-r border-gray-200">
+                    {(() => {
+                      const val = tableData.reduce(
+                        (s, z) =>
+                          s +
+                          (parseInt(z.subtotals["Total"]?.split("/")[0]) || 0),
+                        0
+                      );
+                      const targ = tableData.reduce(
+                        (s, z) =>
+                          s +
+                          (parseInt(z.subtotals["Total"]?.split("/")[1]) || 0),
+                        0
+                      );
+                      return `${val}/${targ}`;
+                    })()}
+                  </td>
+                  {COLUMNS.filter((col) => col !== "Total").map((col) => {
+                    const totalCompleted = tableData.reduce(
+                      (s, z) =>
+                        s + (parseInt(z.subtotals[col]?.split("/")[0]) || 0),
+                      0
+                    );
+                    const totalTarget = tableData.reduce(
+                      (s, z) =>
+                        s + (parseInt(z.subtotals[col]?.split("/")[1]) || 0),
+                      0
+                    );
+                    return (
+                      <td
+                        key={col}
+                        className="px-3 py-2 text-center border-r border-gray-200"
+                      >
+                        {`${totalCompleted}/${totalTarget}`}
+                      </td>
                     );
                   })}
-                </>
-              )}
-            </tbody>
-
-            <tfoot className="sticky bottom-0 bg-[#2E469C] text-white z-20">
-              <tr className="font-bold">
-                <td colSpan={2} className="px-3 py-2 border-r border-gray-200">
-                  Grand Total
-                </td>
-                <td className="px-3 py-2 text-center border-r border-gray-200">
-                  {(() => {
-                    const val = tableData.reduce(
-                      (s, z) =>
-                        s +
-                        (parseInt(z.subtotals["Total"]?.split("/")[0]) || 0),
-                      0
-                    );
-                    const targ = tableData.reduce(
-                      (s, z) =>
-                        s +
-                        (parseInt(z.subtotals["Total"]?.split("/")[1]) || 0),
-                      0
-                    );
-                    return `${val}/${targ}`;
-                  })()}
-                </td>
-                {COLUMNS.filter((col) => col !== "Total").map((col) => {
-                  const totalCompleted = tableData.reduce(
-                    (s, z) =>
-                      s + (parseInt(z.subtotals[col]?.split("/")[0]) || 0),
-                    0
-                  );
-                  const totalTarget = tableData.reduce(
-                    (s, z) =>
-                      s + (parseInt(z.subtotals[col]?.split("/")[1]) || 0),
-                    0
-                  );
-                  return (
-                    <td
-                      key={col}
-                      className="px-3 py-2 text-center border-r border-gray-200"
-                    >
-                      {`${totalCompleted}/${totalTarget}`}
-                    </td>
-                  );
-                })}
-              </tr>
-            </tfoot>
-          </table>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
         </div>
       </section>
     </main>
