@@ -5,10 +5,13 @@ export const getMRChartData = async (req, res) => {
         const { section } = req.query;
         if (!section) return res.status(400).json({ message: "Missing section" });
 
+
         const db = mongoose.connection.db;
         const surveyCol = db.collection("surveyresponses");
         const labelCol = db.collection("val_labels");
         const mapCol = db.collection("dashboard_map");
+
+
 
         // 🔹 Get all MR questions for that section
         const mrQuestions = await mapCol
@@ -20,7 +23,8 @@ export const getMRChartData = async (req, res) => {
             .toArray();
 
         if (!mrQuestions.length) {
-            return res.json([]);
+            res.json({ overall_base: 0, charts: [] });
+            return;
         }
 
         // 🔹 Group by group_name (e.g., C8, D17, etc.)
@@ -29,9 +33,8 @@ export const getMRChartData = async (req, res) => {
             if (!grouped[q.group_name]) grouped[q.group_name] = [];
             grouped[q.group_name].push(q);
         });
-
-        const results = [];
-
+        const overall_base = 0;
+        const charts = [];
         // 🔹 For each group (one chart)
         for (const [groupName, vars] of Object.entries(grouped)) {
             const counts = {};
@@ -52,7 +55,7 @@ export const getMRChartData = async (req, res) => {
                 value: ((count / total) * 100).toFixed(1),
             }));
 
-            results.push({
+            charts.push({
                 group_name: groupName,
                 section,
                 question_text: vars[0].question_text,
@@ -61,7 +64,7 @@ export const getMRChartData = async (req, res) => {
             });
         }
 
-        res.json(results);
+        res.json({ overall_base, charts });
     } catch (err) {
         console.error("getMRChartData error:", err);
         res.status(500).json({ message: "Error fetching MR chart data" });
