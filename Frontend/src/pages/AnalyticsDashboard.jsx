@@ -137,7 +137,7 @@ export default function AnalyticsDashboard() {
     const sectionData = [
         ...(srChartData[activeSection] || []),
         ...(mrChartData[activeSection] || []),
-    ];
+    ].sort((a, b) => (a.sort_order || 0) - (b.sort_order || 0));
 
     return (
         <main className="grid grid-cols-[9vw_90vw] grid-rows-[7vh_93vh] font-inter">
@@ -189,7 +189,6 @@ export default function AnalyticsDashboard() {
                                     ↑ Top
                                 </button>
                             )}
-
                             <div className="grid grid-cols-3 gap-2">
                                 {sectionData.map((q) => (
                                     <div

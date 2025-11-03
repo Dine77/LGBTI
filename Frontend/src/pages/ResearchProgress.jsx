@@ -284,13 +284,34 @@ export default function ResearchCrosstab() {
         rows.forEach((r) => {
           const zone = String(r.Zone || "").trim();
           const city = String(r.City || "").trim();
-          const variable = String(r.Variable || "").trim();
+          const subgroup = String(r.Subgroup || "").trim();
+          const area = String(r.AreaType || "").trim();
           const count = Number(r.Count || 0);
+
           if (!completedLookup[zone]) completedLookup[zone] = {};
           if (!completedLookup[zone][city]) completedLookup[zone][city] = {};
-          completedLookup[zone][city][variable] = count;
-        });
 
+          // ✅ Add subgroup count
+          if (subgroup) {
+            completedLookup[zone][city][subgroup] =
+              (completedLookup[zone][city][subgroup] || 0) + count;
+          }
+
+          // ✅ Add area count
+          if (area) {
+            completedLookup[zone][city][area] =
+              (completedLookup[zone][city][area] || 0) + count;
+          }
+
+          // ✅ Total = sum of all AreaType counts (not subgroups)
+          const areaKeys = ["Urban", "Rural/Semi-urban"];
+          const totalFromAreas = areaKeys.reduce((sum, a) => {
+            return sum + (completedLookup[zone][city][a] || 0);
+          }, 0);
+          console.log(completedLookup);
+
+          completedLookup[zone][city]["Total"] = totalFromAreas;
+        });
         // ✅ Merge config + backend data
         const merged = TABLE_CONFIG.map((zoneConfig) => {
           const cities = zoneConfig.cities.map((c) => {
@@ -303,19 +324,21 @@ export default function ResearchCrosstab() {
               (s, v) => s + (Number(v) || 0),
               0
             );
-
             // ✅ Build each cell
             const cells = {};
             COLUMNS.forEach((col) => {
+              const completedValue =
+                completedLookup[zoneConfig.zone]?.[c.city]?.[col] || 0;
+              const t = targets[col] ?? 0;
+
               if (col === "Total") {
-                cells[col] = `${totalCompleted}/${totalTarget}`;
+                // ✅ Use backend-provided total directly (no manual recalculation)
+                cells[col] = `${completedValue}/${totalTarget}`;
               } else {
-                const t = targets[col] ?? 0;
-                const completed =
-                  completedLookup[zoneConfig.zone]?.[c.city]?.[col] || 0;
-                cells[col] = `${completed}/${t}`;
+                cells[col] = `${completedValue}/${t}`;
               }
             });
+
 
             return {
               city: c.city,
@@ -329,30 +352,39 @@ export default function ResearchCrosstab() {
           // ✅ Compute Subtotals per zone
           const subtotals = {};
           COLUMNS.forEach((col) => {
+            let completedSum = 0;
+            let targetSum = 0;
+
             if (col === "Total") {
-              const completedSum = cities.reduce(
-                (s, it) => s + (Number(it.totalCompleted) || 0),
-                0
-              );
-              const targetSum = cities.reduce(
-                (s, it) => s + (Number(it.totalTarget) || 0),
-                0
-              );
-              subtotals[col] = `${completedSum}/${targetSum}`;
+              // ✅ Total comes from sum of area-type targets (Urban + Rural/Semi-urban)
+              completedSum = cities.reduce((s, it) => {
+                const val = completedLookup[zoneConfig.zone]?.[it.city]?.["Total"] || 0;
+                return s + val;
+              }, 0);
+
+              targetSum = cities.reduce((s, it) => {
+                const areaTargets = ["Urban", "Rural/Semi-urban"];
+                const totalTarget = areaTargets.reduce(
+                  (sum, a) => sum + (Number(it.targets[a]) || 0),
+                  0
+                );
+                return s + totalTarget;
+              }, 0);
             } else {
-              const completedSum = cities.reduce(
-                (s, it) =>
-                  s + (completedLookup[zoneConfig.zone]?.[it.city]?.[col] || 0),
+              // ✅ Normal columns (subgroups + areas)
+              completedSum = cities.reduce(
+                (s, it) => s + (completedLookup[zoneConfig.zone]?.[it.city]?.[col] || 0),
                 0
               );
-              const targetSum = cities.reduce(
+
+              targetSum = cities.reduce(
                 (s, it) => s + Number(it.targets[col] || 0),
                 0
               );
-              subtotals[col] = `${completedSum}/${targetSum}`;
             }
-          });
 
+            subtotals[col] = `${completedSum}/${targetSum}`;
+          });
           return { zone: zoneConfig.zone, cities, subtotals };
         });
 

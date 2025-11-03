@@ -5,19 +5,18 @@ export const getSRChartData = async (req, res) => {
         let { section, District, T_Area, Category, B1_PostCode } = req.query;
         if (!section) return res.status(400).json({ message: "Missing section" });
 
-        section = section.trim();
-
         const db = mongoose.connection.db;
         const surveyCol = db.collection("surveyresponses");
         const labelCol = db.collection("val_labels");
         const mapCol = db.collection("dashboard_map");
 
-        // ✅ Match section (case-insensitive) and SR type
+        // ✅ Sort by section_sort then sort_order
         const srQuestions = await mapCol
             .find({
                 section: { $regex: `^${section}$`, $options: "i" },
                 question_type: "SR",
             })
+            .sort({ section_sort: 1, sort_order: 1 })
             .toArray();
 
         if (!srQuestions.length) {
@@ -25,34 +24,26 @@ export const getSRChartData = async (req, res) => {
             return res.json({ overall_base: 0, charts: [] });
         }
 
-        // 🔹 Dynamic filters
+        // 🔹 Filters
         const filter = { "data.phase1_status": "Completed" };
         if (District && District !== "All") filter["data.District"] = District;
         if (T_Area && T_Area !== "All") filter["data.T_Area"] = T_Area;
         if (Category && Category !== "All") filter["data.Category"] = Category;
         if (B1_PostCode && B1_PostCode !== "All") filter["data.B1_PostCode"] = B1_PostCode;
 
-        // ✅ Compute overall base (respondents count once)
         const overall_base = await surveyCol.countDocuments(filter);
-
         const charts = [];
 
-        // 🔹 Process each SR question
+        // ✅ Keep processing order from DB
         for (const q of srQuestions) {
             const fieldPath = `data.${q.study_var}`;
-
-            // ✅ Distinct values for this question
             const values = await surveyCol.distinct(fieldPath, filter);
             if (!values.length) continue;
 
-            // ✅ Label mapping
             const labels = await labelCol.find({ Variable: q.study_var }).toArray();
             const labelMap = {};
-            labels.forEach((lbl) => {
-                labelMap[String(lbl.Value)] = lbl.Label;
-            });
+            labels.forEach((lbl) => (labelMap[String(lbl.Value)] = lbl.Label));
 
-            // ✅ Count responses
             const counts = {};
             const cursor = surveyCol.find(filter, { projection: { [fieldPath]: 1 } });
             for await (const doc of cursor) {
@@ -62,7 +53,6 @@ export const getSRChartData = async (req, res) => {
                 }
             }
 
-            // ✅ Compute percentages
             const total = Object.values(counts).reduce((a, b) => a + b, 0);
             const data = Object.entries(counts).map(([val, count]) => ({
                 name: labelMap[val] || val,
@@ -75,11 +65,15 @@ export const getSRChartData = async (req, res) => {
                 question_text: q.question_text,
                 charttype: q.charttype,
                 section: q.section,
+                sort_order: q.sort_order,
+                section_sort: q.section_sort,
                 data,
             });
         }
 
-        // ✅ Send one base for the section
+        // ✅ Final sort safety
+        charts.sort((a, b) => a.sort_order - b.sort_order);
+
         res.json({ overall_base, charts });
     } catch (err) {
         console.error("❌ getSRChartData error:", err);

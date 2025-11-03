@@ -5,44 +5,51 @@ export const getSurveyData = async (req, res) => {
         const db = mongoose.connection.db;
         const surveyCol = db.collection("surveyresponses");
 
-        const { region, age, gender, subgroup } = req.query;
         const filter = { "data.phase1_status": "Completed" };
 
-        if (region && region !== "All") filter["data.zone"] = region;
-        if (age && age !== "All") filter["data.BI_postcodde"] = age;
-        if (gender && gender !== "All") filter["data.B4"] = gender;
-        if (subgroup && subgroup !== "All") filter["data.B3"] = subgroup;
+        // if (region && region !== "All") filter["data.zone"] = region;
+        // if (age && age !== "All") filter["data.B1_PostCode"] = age;
+        // if (gender && gender !== "All") filter["data.B4"] = gender;
+        // if (subgroup && subgroup !== "All") filter["data.Category"] = subgroup;
 
         const pipeline = [
             { $match: filter },
 
-            // 🧩 Map codes to categories
+            // 🧩 Derive Subgroup & AreaType fields
             {
                 $addFields: {
-                    Variable: {
+                    Subgroup: {
                         $switch: {
                             branches: [
-                                { case: { $eq: ["$data.B3", "1"] }, then: "Lesbian" },
-                                { case: { $eq: ["$data.B3", "2"] }, then: "Gay" },
-                                { case: { $eq: ["$data.B3", "3"] }, then: "Bisexual" },
-                                { case: { $eq: ["$data.B3", "4"] }, then: "Transgender" },
-                                { case: { $eq: ["$data.B3", "5"] }, then: "Intersex" },
-                                { case: { $in: ["$data.T_Area", ["2", "3"]] }, then: "Rural/Semi-urban" },
-                                { case: { $eq: ["$data.T_Area", "1"] }, then: "Urban" },
+                                { case: { $eq: ["$data.Category", "1"] }, then: "Lesbian" },
+                                { case: { $eq: ["$data.Category", "2"] }, then: "Gay" },
+                                { case: { $eq: ["$data.Category", "3"] }, then: "Bisexual" },
+                                { case: { $eq: ["$data.Category", "4"] }, then: "Transgender" },
+                                { case: { $eq: ["$data.Category", "5"] }, then: "Intersex" },
                             ],
                             default: "Other",
+                        },
+                    },
+                    AreaType: {
+                        $switch: {
+                            branches: [
+                                { case: { $eq: ["$data.T_Area", "1"] }, then: "Urban" },
+                                { case: { $in: ["$data.T_Area", ["2", "3"]] }, then: "Rural/Semi-urban" },
+                            ],
+                            default: "Unknown",
                         },
                     },
                 },
             },
 
-            // 🧮 Count by zone, city, variable
+            // 🧮 Count by Zone + City + Subgroup + AreaType
             {
                 $group: {
                     _id: {
                         Zone: "$data.zone",
                         City: "$data.District",
-                        Variable: "$Variable",
+                        Subgroup: "$Subgroup",
+                        AreaType: "$AreaType",
                     },
                     Count: { $sum: 1 },
                 },
@@ -53,12 +60,13 @@ export const getSurveyData = async (req, res) => {
                     _id: 0,
                     Zone: "$_id.Zone",
                     City: "$_id.City",
-                    Variable: "$_id.Variable",
+                    Subgroup: "$_id.Subgroup",
+                    AreaType: "$_id.AreaType",
                     Count: 1,
                 },
             },
 
-            // 🔗 Lookup zone labels
+            // 🔗 Lookup zone & city labels
             {
                 $lookup: {
                     from: "val_labels",
@@ -78,8 +86,6 @@ export const getSurveyData = async (req, res) => {
                     as: "zoneLabel",
                 },
             },
-
-            // 🔗 Lookup city labels
             {
                 $lookup: {
                     from: "val_labels",
@@ -100,7 +106,6 @@ export const getSurveyData = async (req, res) => {
                 },
             },
 
-            // 🧠 Replace codes with label text
             {
                 $addFields: {
                     Zone: {
@@ -112,18 +117,15 @@ export const getSurveyData = async (req, res) => {
                 },
             },
 
-            // 🧹 Cleanup
-            {
-                $project: {
-                    zoneLabel: 0,
-                    cityLabel: 0,
-                },
-            },
+            { $project: { zoneLabel: 0, cityLabel: 0 } },
 
-            { $sort: { Zone: 1, City: 1, Variable: 1 } },
+            // ✅ Sort cleanly for frontend grouping
+            { $sort: { Zone: 1, City: 1, Subgroup: 1, AreaType: 1 } },
         ];
 
         const rows = await surveyCol.aggregate(pipeline).toArray();
+        console.log("✅ Aggregated rows:", rows);
+
         res.json({ rows });
     } catch (err) {
         console.error("❌ Error in getSurveyData:", err);

@@ -1,13 +1,20 @@
 import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Sidebar() {
-  const navigate = useNavigate(); // ✅ must be inside component
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     localStorage.removeItem("token");
+    localStorage.removeItem("role");
     navigate("/login");
   };
 
+  // 🔐 Get user role from localStorage
+  const userRole = localStorage.getItem("role") || "user";
+  console.log(userRole);
+
+
+  // 🧭 Define navigation items
   const navItems = [
     {
       name: "Research Overview",
@@ -24,13 +31,23 @@ export default function Sidebar() {
       to: "/MapView",
       icon: "/Images/NITI Aayog/gis_world-map.svg",
     },
-    { name: "Data", to: "/Data", icon: "/Images/NITI Aayog/table 1.svg" },
+    {
+      name: "Data",
+      to: "/Data",
+      icon: "/Images/NITI Aayog/table 1.svg",
+      restricted: ["Client"], // ⛔ this will be hidden for client role
+    },
     {
       name: "Analytics Dashboard",
       to: "/AnalyticsDashboard",
       icon: "/Images/NITI Aayog/data-analysis 1.svg",
     },
   ];
+
+  // 🧹 Filter nav items based on role
+  const filteredNavItems = navItems.filter(
+    (item) => !(item.restricted && item.restricted.includes(userRole))
+  );
 
   return (
     <nav className="relative row-start-1 row-end-[-1] col-start-1 col-end-2 bg-gradient-to-b from-[#E91E63] via-[#9C27B0] to-[#673AB7] rounded-tr-lg rounded-br-lg flex flex-col justify-end items-center gap-4">
@@ -51,13 +68,12 @@ export default function Sidebar() {
 
       {/* Navigation */}
       <div className="h-[75%] pt-2 flex justify-center items-center flex-col gap-[0.65rem]">
-        {navItems.map((item, idx) => (
+        {filteredNavItems.map((item, idx) => (
           <NavLink
             key={idx}
             to={item.to}
             className={({ isActive }) =>
-              `w-[75%] flex justify-center items-center flex-col rounded-lg ${
-                isActive ? "bg-[#2e469c]" : "bg-black/25 hover:bg-[#2e469c]"
+              `w-[75%] flex justify-center items-center flex-col rounded-lg ${isActive ? "bg-[#2e469c]" : "bg-black/25 hover:bg-[#2e469c]"
               }`
             }
           >

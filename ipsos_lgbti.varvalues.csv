@@ -1,0 +1,637 @@
+_id,Variable,Value,Label,Question,__v
+69087be4a2e822d1272d40ce,SbjNum,,,SbjNum,0
+6908795475810a88df152275,Category,1,Lesbian,Please indicate the category of respondent,0
+6908795475810a88df152276,Category,2,Gay,Please indicate the category of respondent,0
+6908795475810a88df152277,Category,3,Bisexual,Please indicate the category of respondent,0
+6908795475810a88df152278,Category,4,Trangender,Please indicate the category of respondent,0
+6908795475810a88df152279,Category,5,Intersex,Please indicate the category of respondent,0
+6908795475810a88df15227a,City,1,Bhubaneshwar,City,0
+6908795475810a88df15227b,City,2,Kolkata,City,0
+6908795475810a88df15227c,City,3,Patna,City,0
+6908795475810a88df15227d,City,4,Raipur,City,0
+6908795475810a88df15227e,City,5,Bhopal,City,0
+6908795475810a88df15227f,City,6,Chandigarh,City,0
+6908795475810a88df152280,City,7,Varanasi,City,0
+6908795475810a88df152281,City,8,Lucknow,City,0
+6908795475810a88df152282,City,9,Delhi,City,0
+6908795475810a88df152283,City,10,Imphal,City,0
+6908795475810a88df152284,City,11,Guwahati,City,0
+6908795475810a88df152285,City,12,Bangalore,City,0
+6908795475810a88df152286,City,13,Chennai,City,0
+6908795475810a88df152287,City,14,Hyderabad,City,0
+6908795475810a88df152288,City,15,Ahmedabad,City,0
+6908795475810a88df152289,City,16,Mumbai,City,0
+6908795475810a88df15228a,City,17,Goa,City,0
+6908795475810a88df15228b,City,18,Pune,City,0
+6908795475810a88df15228c,Zone,1,East,Zone,0
+6908795475810a88df15228d,Zone,2,North,Zone,0
+6908795475810a88df15228e,Zone,3,North-East,Zone,0
+6908795475810a88df15228f,Zone,4,South,Zone,0
+6908795475810a88df152290,Zone,5,West,Zone,0
+6908795475810a88df152291,Q4,1,Urban,Can you please confirm if the area that you currently reside in is (READ OUT THE OPTIONS),0
+6908795475810a88df152292,Q4,2,Rural,Can you please confirm if the area that you currently reside in is (READ OUT THE OPTIONS),0
+6908795475810a88df152293,Q4,3,Semi-urban,Can you please confirm if the area that you currently reside in is (READ OUT THE OPTIONS),0
+6908795475810a88df152294,A1,1,"Yes, only to family and friends",A1. Are you open about your sexuality and gender identity to (READ OUT)?,0
+6908795475810a88df152295,A1,2,"Yes, only to peers",A1. Are you open about your sexuality and gender identity to (READ OUT)?,0
+6908795475810a88df152296,A1,3,"Yes, only at workplace",A1. Are you open about your sexuality and gender identity to (READ OUT)?,0
+6908795475810a88df152297,A1,4,"Yes, in all spheres",A1. Are you open about your sexuality and gender identity to (READ OUT)?,0
+6908795475810a88df152298,A1,5,Any other response- specify,A1. Are you open about your sexuality and gender identity to (READ OUT)?,0
+6908795475810a88df152299,Q_11_S,1,"Yes, only to family and friends",A1. Are you open about your sexuality and gender identity to (READ OUT)?,0
+6908795475810a88df15229a,Q_11_S,2,"Yes, only to peers",A1. Are you open about your sexuality and gender identity to (READ OUT)?,0
+6908795475810a88df15229b,Q_11_S,3,"Yes, only at workplace",A1. Are you open about your sexuality and gender identity to (READ OUT)?,0
+6908795475810a88df15229c,Q_11_S,4,"Yes, in all spheres",A1. Are you open about your sexuality and gender identity to (READ OUT)?,0
+6908795475810a88df15229d,Q_11_S,5,Any other response- specify,A1. Are you open about your sexuality and gender identity to (READ OUT)?,0
+6908795475810a88df15229e,A2,1,Yes,A2. Do you have any questions?,0
+6908795475810a88df15229f,A2,2,No,A2. Do you have any questions?,0
+6908795475810a88df1522a0,A3,1,Yes,"A3. With your permission, can we proceed?",0
+6908795475810a88df1522a1,A3,2,No,"A3. With your permission, can we proceed?",0
+6908795475810a88df1522a2,A4,1,Yes,"A4. For quality purpose and check, as a routine procedure we record some part of the interview , do you consent to audio record this interview? ",0
+6908795475810a88df1522a3,A4,2,No,"A4. For quality purpose and check, as a routine procedure we record some part of the interview , do you consent to audio record this interview? ",0
+6908795475810a88df1522a4,A5,1,Yes,A5. Do you have a chosen name?,0
+6908795475810a88df1522a5,A5,2,No,A5. Do you have a chosen name?,0
+6908795475810a88df1522a6,A5,3,Prefer not to answer,A5. Do you have a chosen name?,0
+6908795475810a88df1522a7,B1_PostCode,1,Less than 20 years,POST CODE,0
+6908795475810a88df1522a8,B1_PostCode,2,21 - 24 Years,POST CODE,0
+6908795475810a88df1522a9,B1_PostCode,3,25 - 35 Years,POST CODE,0
+6908795475810a88df1522aa,B1_PostCode,4,36 - 45 Years,POST CODE,0
+6908795475810a88df1522ab,B1_PostCode,5,45 - 60 Years,POST CODE,0
+6908795475810a88df1522ac,B1_PostCode,6,More than 60 years,POST CODE,0
+6908795475810a88df1522ad,B2,1,Man,B2. How would you describe your gender identity?,0
+6908795475810a88df1522ae,B2,2,Woman,B2. How would you describe your gender identity?,0
+6908795475810a88df1522af,B2,3,Transgender,B2. How would you describe your gender identity?,0
+6908795475810a88df1522b0,B2,4,Other (Please Specify),B2. How would you describe your gender identity?,0
+6908795475810a88df1522b1,B2,5,I am not sure,B2. How would you describe your gender identity?,0
+6908795475810a88df1522b2,Q_21_S,1,Man,B2. How would you describe your gender identity?,0
+6908795475810a88df1522b3,Q_21_S,2,Woman,B2. How would you describe your gender identity?,0
+6908795475810a88df1522b4,Q_21_S,3,Transgender,B2. How would you describe your gender identity?,0
+6908795475810a88df1522b5,Q_21_S,4,Other (Please Specify),B2. How would you describe your gender identity?,0
+6908795475810a88df1522b6,Q_21_S,5,I am not sure,B2. How would you describe your gender identity?,0
+6908795475810a88df1522b7,B3,1,Heterosexual or straight,B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522b8,B3,2,Lesbian,B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522b9,B3,3,Gay,B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522ba,B3,4,Bisexual,B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522bb,B3,5,Other (Please Specify),B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522bc,B3,6,I am not sure,B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522bd,Q_22_S,1,Heterosexual or straight,B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522be,Q_22_S,2,Lesbian,B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522bf,Q_22_S,3,Gay,B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522c0,Q_22_S,4,Bisexual,B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522c1,Q_22_S,5,Other (Please Specify),B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522c2,Q_22_S,6,I am not sure,B3.  Which of the following best describes your sexual orientation?,0
+6908795475810a88df1522c3,B4,1,Female,B4. Which of the following best describes the sex you were assigned at birth?,0
+6908795475810a88df1522c4,B4,2,Male,B4. Which of the following best describes the sex you were assigned at birth?,0
+6908795475810a88df1522c5,B4,3,Intersex,B4. Which of the following best describes the sex you were assigned at birth?,0
+6908795475810a88df1522c6,B5,1,No education,B5. What is your highest level of education?,0
+6908795475810a88df1522c7,B5,2,Literate but no formal schooling,B5. What is your highest level of education?,0
+6908795475810a88df1522c8,B5,3,Up to Primary (class 1 to 5),B5. What is your highest level of education?,0
+6908795475810a88df1522c9,B5,4,Up to class 8,B5. What is your highest level of education?,0
+6908795475810a88df1522ca,B5,5,Below Secondary (class 10),B5. What is your highest level of education?,0
+6908795475810a88df1522cb,B5,6,Secondary (class 10) completed,B5. What is your highest level of education?,0
+6908795475810a88df1522cc,B5,7,Higher Secondary incomplete,B5. What is your highest level of education?,0
+6908795475810a88df1522cd,B5,8,Higher Secondary (class 12) completed,B5. What is your highest level of education?,0
+6908795475810a88df1522ce,B5,9,Diploma/Vocational/ITI,B5. What is your highest level of education?,0
+6908795475810a88df1522cf,B5,10,Graduate,B5. What is your highest level of education?,0
+6908795475810a88df1522d0,B5,11,Postgraduate or above,B5. What is your highest level of education?,0
+6908795475810a88df1522d1,B5,12,"Professional degree- Doctor, Lawyer",B5. What is your highest level of education?,0
+6908795475810a88df1522d2,B5,13,Don’t know,B5. What is your highest level of education?,0
+6908795475810a88df1522d3,B5,14,Prefer not to say,B5. What is your highest level of education?,0
+6908795475810a88df1522d4,T_B6_1,1,"Yes, I have in my birth name",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522d5,T_B6_1,2,"No, I applied in my chosen name but did not receive",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522d6,T_B6_1,3,"No, I did not apply for this document in my chosen name ",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522d7,T_B6_2,1,"Yes, I have in my birth name",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522d8,T_B6_2,2,"No, I applied in my chosen name but did not receive",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522d9,T_B6_2,3,"No, I did not apply for this document in my chosen name ",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522da,T_B6_3,1,"Yes, I have in my birth name",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522db,T_B6_3,2,"No, I applied in my chosen name but did not receive",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522dc,T_B6_3,3,"No, I did not apply for this document in my chosen name ",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522dd,T_B6_4,1,"Yes, I have in my birth name",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522de,T_B6_4,2,"No, I applied in my chosen name but did not receive",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522df,T_B6_4,3,"No, I did not apply for this document in my chosen name ",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522e0,T_B6_5,1,"Yes, I have in my birth name",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522e1,T_B6_5,2,"No, I applied in my chosen name but did not receive",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522e2,T_B6_5,3,"No, I did not apply for this document in my chosen name ",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522e3,T_B6_6,1,"Yes, I have in my birth name",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522e4,T_B6_6,2,"No, I applied in my chosen name but did not receive",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522e5,T_B6_6,3,"No, I did not apply for this document in my chosen name ",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522e6,TS_B6_6,1,"Yes, I have in my birth name",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522e7,TS_B6_6,2,"No, I applied in my chosen name but did not receive",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522e8,TS_B6_6,3,"No, I did not apply for this document in my chosen name ",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522e9,T_B6_7,1,"Yes, I have in my birth name",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522ea,T_B6_7,2,"No, I applied in my chosen name but did not receive",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522eb,T_B6_7,3,"No, I did not apply for this document in my chosen name ",B6. Which of the following documents do you possess?,0
+6908795475810a88df1522ec,C1,1,Salaried employment (Work for Someone else) , C1. Are you currently employed?,0
+6908795475810a88df1522ed,C1,2,Self-employed (Work for Yourself) not business, C1. Are you currently employed?,0
+6908795475810a88df1522ee,C1,3,"Own a business, alone or with someone else", C1. Are you currently employed?,0
+6908795475810a88df1522ef,C1,4,Apprentice, C1. Are you currently employed?,0
+6908795475810a88df1522f0,C1,5,Not working, C1. Are you currently employed?,0
+6908795475810a88df1522f1,C2,1,Looking after the home,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522f2,C2,2,Looking for work (unemployed),"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522f3,C2,3,Retired,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522f4,C2,4,Unable to work due to sickness or ill-health,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522f5,C2,5,Not working and not looking for work,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522f6,C2,6,Student,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522f7,C2,7,Other Specify ……,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522f8,C2,8,Refused ,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522f9,Q_30_S,1,Looking after the home,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522fa,Q_30_S,2,Looking for work (unemployed),"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522fb,Q_30_S,3,Retired,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522fc,Q_30_S,4,Unable to work due to sickness or ill-health,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522fd,Q_30_S,5,Not working and not looking for work,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522fe,Q_30_S,6,Student,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df1522ff,Q_30_S,7,Other Specify ……,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df152300,Q_30_S,8,Refused ,"C2. If not working, which of this best describes your current situation?",0
+6908795475810a88df152301,C3,1,Public Sector (Government) ,C3. Where do you work?,0
+6908795475810a88df152302,C3,2,Private Sector ,C3. Where do you work?,0
+6908795475810a88df152303,C3,3,Non-government organisation,C3. Where do you work?,0
+6908795475810a88df152304,C3,4,Skilled work on my own,C3. Where do you work?,0
+6908795475810a88df152305,C3,5,Unskilled work as and when comes my way,C3. Where do you work?,0
+6908795475810a88df152306,C3,6,"Employer’s household (private households employing maid servant, watchman, cook, etc.)",C3. Where do you work?,0
+6908795475810a88df152307,C3,7,Any other Specify,C3. Where do you work?,0
+6908795475810a88df152308,Q_31_S,1,Public Sector (Government) ,C3. Where do you work?,0
+6908795475810a88df152309,Q_31_S,2,Private Sector ,C3. Where do you work?,0
+6908795475810a88df15230a,Q_31_S,3,Non-government organisation,C3. Where do you work?,0
+6908795475810a88df15230b,Q_31_S,4,Skilled work on my own,C3. Where do you work?,0
+6908795475810a88df15230c,Q_31_S,5,Unskilled work as and when comes my way,C3. Where do you work?,0
+6908795475810a88df15230d,Q_31_S,6,"Employer’s household (private households employing maid servant, watchman, cook, etc.)",C3. Where do you work?,0
+6908795475810a88df15230e,Q_31_S,7,Any other Specify,C3. Where do you work?,0
+6908795475810a88df15230f,C4,1,Less than 1 lakh,C4. What is your annual income? Consider only self income not HH or with partner/ other family members,0
+6908795475810a88df152310,C4,2,1 lakh to less than 3 lakh,C4. What is your annual income? Consider only self income not HH or with partner/ other family members,0
+6908795475810a88df152311,C4,3,3 to less than 5 lakhs,C4. What is your annual income? Consider only self income not HH or with partner/ other family members,0
+6908795475810a88df152312,C4,4,5 lakhs- 10 lakhs,C4. What is your annual income? Consider only self income not HH or with partner/ other family members,0
+6908795475810a88df152313,C4,5,10 lakhs to 15 lakhs,C4. What is your annual income? Consider only self income not HH or with partner/ other family members,0
+6908795475810a88df152314,C4,6,Above 15 lakhs,C4. What is your annual income? Consider only self income not HH or with partner/ other family members,0
+6908795475810a88df152315,C4,7,No regular annual income,C4. What is your annual income? Consider only self income not HH or with partner/ other family members,0
+6908795475810a88df152316,C4,8,Prefer not to say,C4. What is your annual income? Consider only self income not HH or with partner/ other family members,0
+6908795475810a88df152317,C7,1,Not at all confident ,"C7. On a scale of 1 to 5, where 1 is not at all confident and 5 is very confident, how confident do you feel about achieving your financial goal?",0
+6908795475810a88df152318,C7,2,Not so confident ,"C7. On a scale of 1 to 5, where 1 is not at all confident and 5 is very confident, how confident do you feel about achieving your financial goal?",0
+6908795475810a88df152319,C7,3,Moderately confident,"C7. On a scale of 1 to 5, where 1 is not at all confident and 5 is very confident, how confident do you feel about achieving your financial goal?",0
+6908795475810a88df15231a,C7,4,Confident,"C7. On a scale of 1 to 5, where 1 is not at all confident and 5 is very confident, how confident do you feel about achieving your financial goal?",0
+6908795475810a88df15231b,C7,5,Very Confident,"C7. On a scale of 1 to 5, where 1 is not at all confident and 5 is very confident, how confident do you feel about achieving your financial goal?",0
+6908795475810a88df15231c,C8,1,Finding it difficult to get by,C8. Which one of the following best describes how well you are managing financially these days?,0
+6908795475810a88df15231d,C8,2,Just getting by,C8. Which one of the following best describes how well you are managing financially these days?,0
+6908795475810a88df15231e,C8,3,Doing okay,C8. Which one of the following best describes how well you are managing financially these days?,0
+6908795475810a88df15231f,C8,4,Living comfortably,C8. Which one of the following best describes how well you are managing financially these days?,0
+6908795475810a88df152320,C8,5,Don’t know,C8. Which one of the following best describes how well you are managing financially these days?,0
+6908795475810a88df152321,C8,6,Refused,C8. Which one of the following best describes how well you are managing financially these days?,0
+6908795475810a88df152322,C9,1,Own a house/apartment,C9. What is your current living arrangement?,0
+6908795475810a88df152323,C9,2,Rent a house/apartment,C9. What is your current living arrangement?,0
+6908795475810a88df152324,C9,3,Living with family (not owner of the house),C9. What is your current living arrangement?,0
+6908795475810a88df152325,C9,4,Shared accommodation),C9. What is your current living arrangement?,0
+6908795475810a88df152326,C9,5,Hostels/Dormitories,C9. What is your current living arrangement?,0
+6908795475810a88df152327,C9,6,Other (specify),C9. What is your current living arrangement?,0
+6908795475810a88df152328,Q_39_S,1,Own a house/apartment,C9. What is your current living arrangement?,0
+6908795475810a88df152329,Q_39_S,2,Rent a house/apartment,C9. What is your current living arrangement?,0
+6908795475810a88df15232a,Q_39_S,3,Living with family (not owner of the house),C9. What is your current living arrangement?,0
+6908795475810a88df15232b,Q_39_S,4,Shared accommodation),C9. What is your current living arrangement?,0
+6908795475810a88df15232c,Q_39_S,5,Hostels/Dormitories,C9. What is your current living arrangement?,0
+6908795475810a88df15232d,Q_39_S,6,Other (specify),C9. What is your current living arrangement?,0
+6908795475810a88df15232e,C11,1,Yes,"C11. Do you have access to the internet, including through your mobile phone, your household’s broadband connection, hot-spots. or wi-fi, at home, at  educational institutions or at work?",0
+6908795475810a88df15232f,C11,2,No,"C11. Do you have access to the internet, including through your mobile phone, your household’s broadband connection, hot-spots. or wi-fi, at home, at  educational institutions or at work?",0
+6908795475810a88df152330,T_D4_2,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152331,T_D4_2,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152332,T_D4_2,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152333,T_D4_2,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152334,T_D4_2_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152335,T_D4_2_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152336,T_D4_2_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152337,T_D4_2_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152338,T_D4_3,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152339,T_D4_3,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15233a,T_D4_3,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15233b,T_D4_3,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15233c,T_D4_3_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15233d,T_D4_3_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15233e,T_D4_3_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15233f,T_D4_3_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152340,T_D4_4,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152341,T_D4_4,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152342,T_D4_4,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152343,T_D4_4,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152344,T_D4_4_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152345,T_D4_4_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152346,T_D4_4_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152347,T_D4_4_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152348,T_D4_6,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152349,T_D4_6,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15234a,T_D4_6,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15234b,T_D4_6,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15234c,T_D4_6_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15234d,T_D4_6_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15234e,T_D4_6_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15234f,T_D4_6_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152350,T_D4_7,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152351,T_D4_7,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152352,T_D4_7,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152353,T_D4_7,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152354,T_D4_7_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152355,T_D4_7_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152356,T_D4_7_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152357,T_D4_7_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152358,T_D4_8,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152359,T_D4_8,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15235a,T_D4_8,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15235b,T_D4_8,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15235c,T_D4_8_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15235d,T_D4_8_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15235e,T_D4_8_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15235f,T_D4_8_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152360,T_D4_9,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152361,T_D4_9,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152362,T_D4_9,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152363,T_D4_9,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152364,T_D4_9_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152365,T_D4_9_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152366,T_D4_9_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152367,T_D4_9_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152368,T_D4_10,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152369,T_D4_10,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15236a,T_D4_10,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15236b,T_D4_10,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15236c,T_D4_10_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15236d,T_D4_10_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15236e,T_D4_10_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15236f,T_D4_10_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152370,T_D4_12,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152371,T_D4_12,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152372,T_D4_12,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152373,T_D4_12,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152374,T_D4_12_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152375,T_D4_12_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152376,T_D4_12_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152377,T_D4_12_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152378,T_D4_14,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152379,T_D4_14,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15237a,T_D4_14,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15237b,T_D4_14,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15237c,T_D4_14_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15237d,T_D4_14_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15237e,T_D4_14_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15237f,T_D4_14_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152380,T_D4_15,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152381,T_D4_15,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152382,T_D4_15,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152383,T_D4_15,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152384,T_D4_15_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152385,T_D4_15_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152386,T_D4_15_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152387,T_D4_15_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152388,T_D4_16,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152389,T_D4_16,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15238a,T_D4_16,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15238b,T_D4_16,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15238c,T_D4_16_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15238d,T_D4_16_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15238e,T_D4_16_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15238f,T_D4_16_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152390,T_D4_18,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152391,T_D4_18,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152392,T_D4_18,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152393,T_D4_18,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152394,T_D4_18_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152395,T_D4_18_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152396,T_D4_18_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152397,T_D4_18_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152398,T_D4_19,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df152399,T_D4_19,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15239a,T_D4_19,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15239b,T_D4_19,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15239c,T_D4_19_Q_46_S,1,Commercial Bank,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15239d,T_D4_19_Q_46_S,2,Non-banking financial Institutions like Micro finance/FinTech,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15239e,T_D4_19_Q_46_S,3,Credit union or cooperatives,D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df15239f,T_D4_19_Q_46_S,4,Any other (Specify),D4. From where did you approach to access the mentioned financial products and services?,0
+6908795475810a88df1523a0,D5,1,Not at all Satisfied,"D5. Given your experience of accessing financial products and services, on a scale of 1 to 5 where 1 is not at all satisfied and 5 is very satisfied, how would you rate your access to financial products? ",0
+6908795475810a88df1523a1,D5,2,Not so satisfied ,"D5. Given your experience of accessing financial products and services, on a scale of 1 to 5 where 1 is not at all satisfied and 5 is very satisfied, how would you rate your access to financial products? ",0
+6908795475810a88df1523a2,D5,3,Moderately Satisfied,"D5. Given your experience of accessing financial products and services, on a scale of 1 to 5 where 1 is not at all satisfied and 5 is very satisfied, how would you rate your access to financial products? ",0
+6908795475810a88df1523a3,D5,4,Satisfied,"D5. Given your experience of accessing financial products and services, on a scale of 1 to 5 where 1 is not at all satisfied and 5 is very satisfied, how would you rate your access to financial products? ",0
+6908795475810a88df1523a4,D5,5,Very Satisfied,"D5. Given your experience of accessing financial products and services, on a scale of 1 to 5 where 1 is not at all satisfied and 5 is very satisfied, how would you rate your access to financial products? ",0
+6908795475810a88df1523a5,D7,1,Not at all useful,"D7. On a scale of 1 to 5 where 1 Is not at all useful and 5 is very useful, how useful do you find the financial products to meet your needs?",0
+6908795475810a88df1523a6,D7,2,Not so useful,"D7. On a scale of 1 to 5 where 1 Is not at all useful and 5 is very useful, how useful do you find the financial products to meet your needs?",0
+6908795475810a88df1523a7,D7,3,Moderately useful,"D7. On a scale of 1 to 5 where 1 Is not at all useful and 5 is very useful, how useful do you find the financial products to meet your needs?",0
+6908795475810a88df1523a8,D7,4,Useful,"D7. On a scale of 1 to 5 where 1 Is not at all useful and 5 is very useful, how useful do you find the financial products to meet your needs?",0
+6908795475810a88df1523a9,D7,5,Very useful,"D7. On a scale of 1 to 5 where 1 Is not at all useful and 5 is very useful, how useful do you find the financial products to meet your needs?",0
+6908795475810a88df1523aa,D8,1,Very difficult,"D8. On a scale of 1 to 5 where 1 is very difficult and 5 is very easy, how easy is it for you to apply or access financial products and services?",0
+6908795475810a88df1523ab,D8,2,Not so easy,"D8. On a scale of 1 to 5 where 1 is very difficult and 5 is very easy, how easy is it for you to apply or access financial products and services?",0
+6908795475810a88df1523ac,D8,3,Moderately Easy,"D8. On a scale of 1 to 5 where 1 is very difficult and 5 is very easy, how easy is it for you to apply or access financial products and services?",0
+6908795475810a88df1523ad,D8,4,Easy,"D8. On a scale of 1 to 5 where 1 is very difficult and 5 is very easy, how easy is it for you to apply or access financial products and services?",0
+6908795475810a88df1523ae,D8,5,Very Easy,"D8. On a scale of 1 to 5 where 1 is very difficult and 5 is very easy, how easy is it for you to apply or access financial products and services?",0
+6908795475810a88df1523af,D9,1,Not at all supportive,"D9. On a scale of 1 to 5 where 1 is not at all supporting and 5 is very supportive, how would you describe the level of support provided by consumer services?",0
+6908795475810a88df1523b0,D9,2,Not so supportive,"D9. On a scale of 1 to 5 where 1 is not at all supporting and 5 is very supportive, how would you describe the level of support provided by consumer services?",0
+6908795475810a88df1523b1,D9,3,Moderately supportive,"D9. On a scale of 1 to 5 where 1 is not at all supporting and 5 is very supportive, how would you describe the level of support provided by consumer services?",0
+6908795475810a88df1523b2,D9,4,Supportive,"D9. On a scale of 1 to 5 where 1 is not at all supporting and 5 is very supportive, how would you describe the level of support provided by consumer services?",0
+6908795475810a88df1523b3,D9,5,Very Supportive,"D9. On a scale of 1 to 5 where 1 is not at all supporting and 5 is very supportive, how would you describe the level of support provided by consumer services?",0
+6908795475810a88df1523b4,D10,1,Yes,"D10. In the past 2 years, has there been a need for any financial product or service that you could not access? ",0
+6908795475810a88df1523b5,D10,2,No,"D10. In the past 2 years, has there been a need for any financial product or service that you could not access? ",0
+6908795475810a88df1523b6,D13,1,Daily,D13. How frequently do you use digital platforms for financial transactions?,0
+6908795475810a88df1523b7,D13,2,A few times a week,D13. How frequently do you use digital platforms for financial transactions?,0
+6908795475810a88df1523b8,D13,3,Once a week,D13. How frequently do you use digital platforms for financial transactions?,0
+6908795475810a88df1523b9,D13,4,Once a month,D13. How frequently do you use digital platforms for financial transactions?,0
+6908795475810a88df1523ba,D13,5,Once in few months,D13. How frequently do you use digital platforms for financial transactions?,0
+6908795475810a88df1523bb,D13,6,Rarely,D13. How frequently do you use digital platforms for financial transactions?,0
+6908795475810a88df1523bc,D13,7,Never,D13. How frequently do you use digital platforms for financial transactions?,0
+6908795475810a88df1523bd,D13,8,Can’t say,D13. How frequently do you use digital platforms for financial transactions?,0
+6908795475810a88df1523be,D14,1,Yes,"D14. Have you encountered any barriers while using mobile banking or fintech apps (Revolut, PayPal, Square, Monzo, DBS, Niyo, Jupiter, FI moneyetc.)?",0
+6908795475810a88df1523bf,D14,2,No,"D14. Have you encountered any barriers while using mobile banking or fintech apps (Revolut, PayPal, Square, Monzo, DBS, Niyo, Jupiter, FI moneyetc.)?",0
+6908795475810a88df1523c0,D18a,1,Yes,"D18a. Has anyone (partner or family) ever tried to control your access to money or financial accounts (e.g., bank accounts, credit cards, investments) because of your LGBTI identity?",0
+6908795475810a88df1523c1,D18a,2,No,"D18a. Has anyone (partner or family) ever tried to control your access to money or financial accounts (e.g., bank accounts, credit cards, investments) because of your LGBTI identity?",0
+6908795475810a88df1523c2,D18a,3,Prefer not to say,"D18a. Has anyone (partner or family) ever tried to control your access to money or financial accounts (e.g., bank accounts, credit cards, investments) because of your LGBTI identity?",0
+6908795475810a88df1523c3,D18aa,1,Family,D18aa. Who tried to control your access to money or financial accounts?,0
+6908795475810a88df1523c4,D18aa,2,Friends,D18aa. Who tried to control your access to money or financial accounts?,0
+6908795475810a88df1523c5,D18aa,3,Partner,D18aa. Who tried to control your access to money or financial accounts?,0
+6908795475810a88df1523c6,D18aa,4,Financial Institutions ,D18aa. Who tried to control your access to money or financial accounts?,0
+6908795475810a88df1523c7,D18aa,5,Any other Specify,D18aa. Who tried to control your access to money or financial accounts?,0
+6908795475810a88df1523c8,Q_66_S,1,Family,D18aa. Who tried to control your access to money or financial accounts?,0
+6908795475810a88df1523c9,Q_66_S,2,Friends,D18aa. Who tried to control your access to money or financial accounts?,0
+6908795475810a88df1523ca,Q_66_S,3,Partner,D18aa. Who tried to control your access to money or financial accounts?,0
+6908795475810a88df1523cb,Q_66_S,4,Financial Institutions ,D18aa. Who tried to control your access to money or financial accounts?,0
+6908795475810a88df1523cc,Q_66_S,5,Any other Specify,D18aa. Who tried to control your access to money or financial accounts?,0
+6908795475810a88df1523cd,D18b,1,Yes,"D18b. Has anyone ever pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make because of your LGBTI identity?",0
+6908795475810a88df1523ce,D18b,2,No,"D18b. Has anyone ever pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make because of your LGBTI identity?",0
+6908795475810a88df1523cf,D18b,3,Prefer not to say,"D18b. Has anyone ever pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make because of your LGBTI identity?",0
+6908795475810a88df1523d0,D18bb,1,Family,"D18bb. Who pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make?",0
+6908795475810a88df1523d1,D18bb,2,Friends,"D18bb. Who pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make?",0
+6908795475810a88df1523d2,D18bb,3,Partner,"D18bb. Who pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make?",0
+6908795475810a88df1523d3,D18bb,4,Financial Institutions ,"D18bb. Who pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make?",0
+6908795475810a88df1523d4,D18bb,5,Any other Specify,"D18bb. Who pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make?",0
+6908795475810a88df1523d5,Q_68_S,1,Family,"D18bb. Who pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make?",0
+6908795475810a88df1523d6,Q_68_S,2,Friends,"D18bb. Who pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make?",0
+6908795475810a88df1523d7,Q_68_S,3,Partner,"D18bb. Who pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make?",0
+6908795475810a88df1523d8,Q_68_S,4,Financial Institutions ,"D18bb. Who pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make?",0
+6908795475810a88df1523d9,Q_68_S,5,Any other Specify,"D18bb. Who pressured you or tricked you into giving them money, taking out loans in your name, or making purchases that you didn't want to make?",0
+6908795475810a88df1523da,D18c,1,Yes,"D18c. Has this experience affected your ability to manage your finances, access credit, or save for your future?",0
+6908795475810a88df1523db,D18c,2,No,"D18c. Has this experience affected your ability to manage your finances, access credit, or save for your future?",0
+6908795475810a88df1523dc,D18c,3,Prefer not to say,"D18c. Has this experience affected your ability to manage your finances, access credit, or save for your future?",0
+6908795475810a88df1523dd,D18d,1,Yes,D18d. Are you aware of any resources or support services available to people experiencing financial abuse or exploitation? ,0
+6908795475810a88df1523de,D18d,2,No,D18d. Are you aware of any resources or support services available to people experiencing financial abuse or exploitation? ,0
+6908795475810a88df1523df,D19,1,Not at all good,"D19. On a scale of 1 to 5 where 1 is not at all good and 5 is very good, how would you rate your interaction with frontline staff of bank/financial institutions? ",0
+6908795475810a88df1523e0,D19,2,Not good,"D19. On a scale of 1 to 5 where 1 is not at all good and 5 is very good, how would you rate your interaction with frontline staff of bank/financial institutions? ",0
+6908795475810a88df1523e1,D19,3,Average,"D19. On a scale of 1 to 5 where 1 is not at all good and 5 is very good, how would you rate your interaction with frontline staff of bank/financial institutions? ",0
+6908795475810a88df1523e2,D19,4,Good,"D19. On a scale of 1 to 5 where 1 is not at all good and 5 is very good, how would you rate your interaction with frontline staff of bank/financial institutions? ",0
+6908795475810a88df1523e3,D19,5,Very good,"D19. On a scale of 1 to 5 where 1 is not at all good and 5 is very good, how would you rate your interaction with frontline staff of bank/financial institutions? ",0
+6908795475810a88df1523e4,D19,6,Can’t Say,"D19. On a scale of 1 to 5 where 1 is not at all good and 5 is very good, how would you rate your interaction with frontline staff of bank/financial institutions? ",0
+6908795475810a88df1523e5,D20a1,1,Not at all knowledgeable,"D20a1. On a scale of 1 to 5 where 1 is not at all knowledge and 5 is very knowledgeable, how knowledgeable do you find the frontline staff of bank/financial institutions in addressing your queries or concerns related to products or documentation? ",0
+6908795475810a88df1523e6,D20a1,2,Not so knowledgeable,"D20a1. On a scale of 1 to 5 where 1 is not at all knowledge and 5 is very knowledgeable, how knowledgeable do you find the frontline staff of bank/financial institutions in addressing your queries or concerns related to products or documentation? ",0
+6908795475810a88df1523e7,D20a1,3,Moderately knowledgeable,"D20a1. On a scale of 1 to 5 where 1 is not at all knowledge and 5 is very knowledgeable, how knowledgeable do you find the frontline staff of bank/financial institutions in addressing your queries or concerns related to products or documentation? ",0
+6908795475810a88df1523e8,D20a1,4,Knowledgeable,"D20a1. On a scale of 1 to 5 where 1 is not at all knowledge and 5 is very knowledgeable, how knowledgeable do you find the frontline staff of bank/financial institutions in addressing your queries or concerns related to products or documentation? ",0
+6908795475810a88df1523e9,D20a1,5,Very knowledgeable,"D20a1. On a scale of 1 to 5 where 1 is not at all knowledge and 5 is very knowledgeable, how knowledgeable do you find the frontline staff of bank/financial institutions in addressing your queries or concerns related to products or documentation? ",0
+6908795475810a88df1523ea,D20a1,6,Can’t Say,"D20a1. On a scale of 1 to 5 where 1 is not at all knowledge and 5 is very knowledgeable, how knowledgeable do you find the frontline staff of bank/financial institutions in addressing your queries or concerns related to products or documentation? ",0
+6908795475810a88df1523eb,D20a2,1,Not at all helpful ,"D20a2. On a scale of 1 to 5 where 1 is not at all helpful and 5 is very helpful, how know helpful do you find the frontline staff of bank/financial institutions in helping you access products or documentation?",0
+6908795475810a88df1523ec,D20a2,2,Not so helpful,"D20a2. On a scale of 1 to 5 where 1 is not at all helpful and 5 is very helpful, how know helpful do you find the frontline staff of bank/financial institutions in helping you access products or documentation?",0
+6908795475810a88df1523ed,D20a2,3,Moderately helpful,"D20a2. On a scale of 1 to 5 where 1 is not at all helpful and 5 is very helpful, how know helpful do you find the frontline staff of bank/financial institutions in helping you access products or documentation?",0
+6908795475810a88df1523ee,D20a2,4,Helpful,"D20a2. On a scale of 1 to 5 where 1 is not at all helpful and 5 is very helpful, how know helpful do you find the frontline staff of bank/financial institutions in helping you access products or documentation?",0
+6908795475810a88df1523ef,D20a2,5,Very helpful,"D20a2. On a scale of 1 to 5 where 1 is not at all helpful and 5 is very helpful, how know helpful do you find the frontline staff of bank/financial institutions in helping you access products or documentation?",0
+6908795475810a88df1523f0,D20a2,6,Can’t Say,"D20a2. On a scale of 1 to 5 where 1 is not at all helpful and 5 is very helpful, how know helpful do you find the frontline staff of bank/financial institutions in helping you access products or documentation?",0
+6908795475810a88df1523f1,D20b,1,Not at all inclusive ,"D20b. On a scale of 1 to 5, where 1 is not at all inclusive and 5 is very inclusive, how would you find the ability of frontline staff of bank/financial institutions in demonstrating inclusivity towards your personal circumstances or needs?",0
+6908795475810a88df1523f2,D20b,2,Not so inclusive,"D20b. On a scale of 1 to 5, where 1 is not at all inclusive and 5 is very inclusive, how would you find the ability of frontline staff of bank/financial institutions in demonstrating inclusivity towards your personal circumstances or needs?",0
+6908795475810a88df1523f3,D20b,3,Moderately inclusive ,"D20b. On a scale of 1 to 5, where 1 is not at all inclusive and 5 is very inclusive, how would you find the ability of frontline staff of bank/financial institutions in demonstrating inclusivity towards your personal circumstances or needs?",0
+6908795475810a88df1523f4,D20b,4,Inclusive,"D20b. On a scale of 1 to 5, where 1 is not at all inclusive and 5 is very inclusive, how would you find the ability of frontline staff of bank/financial institutions in demonstrating inclusivity towards your personal circumstances or needs?",0
+6908795475810a88df1523f5,D20b,5,Very inclusive,"D20b. On a scale of 1 to 5, where 1 is not at all inclusive and 5 is very inclusive, how would you find the ability of frontline staff of bank/financial institutions in demonstrating inclusivity towards your personal circumstances or needs?",0
+6908795475810a88df1523f6,D20b,6,Can’t Say,"D20b. On a scale of 1 to 5, where 1 is not at all inclusive and 5 is very inclusive, how would you find the ability of frontline staff of bank/financial institutions in demonstrating inclusivity towards your personal circumstances or needs?",0
+6908795475810a88df1523f7,D21,1,Yes,D21. Does your employer have a non-discrimination or anti-harassment policy that explicitly includes sexual orientation and gender identity (LGBTQI)?,0
+6908795475810a88df1523f8,D21,2,No,D21. Does your employer have a non-discrimination or anti-harassment policy that explicitly includes sexual orientation and gender identity (LGBTQI)?,0
+6908795475810a88df1523f9,D21,3,Don’t Know,D21. Does your employer have a non-discrimination or anti-harassment policy that explicitly includes sexual orientation and gender identity (LGBTQI)?,0
+6908795475810a88df1523fa,D22,1,Yes ,"D22. Are there benefits available to LGBTQI employees, such as healthcare coverage for same-sex partners or gender-affirming treatments?",0
+6908795475810a88df1523fb,D22,2,No,"D22. Are there benefits available to LGBTQI employees, such as healthcare coverage for same-sex partners or gender-affirming treatments?",0
+6908795475810a88df1523fc,D22,3,Don’t Know,"D22. Are there benefits available to LGBTQI employees, such as healthcare coverage for same-sex partners or gender-affirming treatments?",0
+6908795475810a88df1523fd,D23,1,Yes ,"D23. Does your employer provide equal spousal or domestic partner benefits to all employees, regardless of gender or sexual orientation? ",0
+6908795475810a88df1523fe,D23,2,No,"D23. Does your employer provide equal spousal or domestic partner benefits to all employees, regardless of gender or sexual orientation? ",0
+6908795475810a88df1523ff,D23,3,Don’t Know,"D23. Does your employer provide equal spousal or domestic partner benefits to all employees, regardless of gender or sexual orientation? ",0
+6908795475810a88df152400,D24,1,Yes,"D24. Does your organization provide wellbeing resources (financial, physical, emotional) or support systems that are tailored for LGBTQI employees? ",0
+6908795475810a88df152401,D24,2,No,"D24. Does your organization provide wellbeing resources (financial, physical, emotional) or support systems that are tailored for LGBTQI employees? ",0
+6908795475810a88df152402,D24,3,Don’t Know,"D24. Does your organization provide wellbeing resources (financial, physical, emotional) or support systems that are tailored for LGBTQI employees? ",0
+6908795475810a88df152403,E1,1,Yes,E1. Were you required to provide details on Sexual Orientation and Gender Identity related information to access any financial products and services?,0
+6908795475810a88df152404,E1,2,No,E1. Were you required to provide details on Sexual Orientation and Gender Identity related information to access any financial products and services?,0
+6908795475810a88df152405,E1,3,Don’t know,E1. Were you required to provide details on Sexual Orientation and Gender Identity related information to access any financial products and services?,0
+6908795475810a88df152406,E2,1,Sexual orientation,E2. What SOGI data were you asked to provide?,0
+6908795475810a88df152407,E2,2,Gender identity,E2. What SOGI data were you asked to provide?,0
+6908795475810a88df152408,E2,3,Both sexual orientation and gender identity,E2. What SOGI data were you asked to provide?,0
+6908795475810a88df152409,E2,4,Other (Please specify),E2. What SOGI data were you asked to provide?,0
+6908795475810a88df15240a,Q_86_S,1,Sexual orientation,E2. What SOGI data were you asked to provide?,0
+6908795475810a88df15240b,Q_86_S,2,Gender identity,E2. What SOGI data were you asked to provide?,0
+6908795475810a88df15240c,Q_86_S,3,Both sexual orientation and gender identity,E2. What SOGI data were you asked to provide?,0
+6908795475810a88df15240d,Q_86_S,4,Other (Please specify),E2. What SOGI data were you asked to provide?,0
+6908795475810a88df15240e,E3,1,Not at all comfortable,"E3. If there was a regulation for financial institutions to gather SOGI data to provide tailored services, how comfortable would you feel disclosing your sexual orientation or gender identity when dealing with financial institutions? ",0
+6908795475810a88df15240f,E3,2,Slightly comfortable,"E3. If there was a regulation for financial institutions to gather SOGI data to provide tailored services, how comfortable would you feel disclosing your sexual orientation or gender identity when dealing with financial institutions? ",0
+6908795475810a88df152410,E3,3,Moderately comfortable,"E3. If there was a regulation for financial institutions to gather SOGI data to provide tailored services, how comfortable would you feel disclosing your sexual orientation or gender identity when dealing with financial institutions? ",0
+6908795475810a88df152411,E3,4,Very comfortable,"E3. If there was a regulation for financial institutions to gather SOGI data to provide tailored services, how comfortable would you feel disclosing your sexual orientation or gender identity when dealing with financial institutions? ",0
+6908795475810a88df152412,E3,5,Extremely comfortable,"E3. If there was a regulation for financial institutions to gather SOGI data to provide tailored services, how comfortable would you feel disclosing your sexual orientation or gender identity when dealing with financial institutions? ",0
+6908795475810a88df152413,E4,1,Concern about privacy and data security,E4. why do you say so?,0
+6908795475810a88df152414,E4,2,Fear of discrimination or biased treatment,E4. why do you say so?,0
+6908795475810a88df152415,E4,3,Other (Please specify),E4. why do you say so?,0
+6908795475810a88df152416,Q_88_S,1,Concern about privacy and data security,E4. why do you say so?,0
+6908795475810a88df152417,Q_88_S,2,Fear of discrimination or biased treatment,E4. why do you say so?,0
+6908795475810a88df152418,Q_88_S,3,Other (Please specify),E4. why do you say so?,0
+6908795475810a88df152419,T_F1_1,1,1 - Not Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15241a,T_F1_1,2,2 - Slightly Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15241b,T_F1_1,3,3 - Somewhat Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15241c,T_F1_1,4,4 - Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15241d,T_F1_1,5,5 - Very Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15241e,T_F1_1,6,98 - Can’t say,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15241f,T_F1_2,1,1 - Not Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152420,T_F1_2,2,2 - Slightly Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152421,T_F1_2,3,3 - Somewhat Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152422,T_F1_2,4,4 - Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152423,T_F1_2,5,5 - Very Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152424,T_F1_2,6,98 - Can’t say,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152425,T_F1_3,1,1 - Not Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152426,T_F1_3,2,2 - Slightly Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152427,T_F1_3,3,3 - Somewhat Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152428,T_F1_3,4,4 - Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152429,T_F1_3,5,5 - Very Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15242a,T_F1_3,6,98 - Can’t say,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15242b,T_F1_4,1,1 - Not Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15242c,T_F1_4,2,2 - Slightly Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15242d,T_F1_4,3,3 - Somewhat Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15242e,T_F1_4,4,4 - Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df15242f,T_F1_4,5,5 - Very Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152430,T_F1_4,6,98 - Can’t say,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152431,T_F1_5,1,1 - Not Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152432,T_F1_5,2,2 - Slightly Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152433,T_F1_5,3,3 - Somewhat Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152434,T_F1_5,4,4 - Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152435,T_F1_5,5,5 - Very Vulnerable,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152436,T_F1_5,6,98 - Can’t say,"F1. On a scale of 1 to 5, where 1 Not Vulnerable and 5 is Very Vulnerable, how vulnerable do you feel to the following?",0
+6908795475810a88df152437,T_G1_1,1,1 - Do not trust at all,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152438,T_G1_1,2,2,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152439,T_G1_1,3,3,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15243a,T_G1_1,4,4,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15243b,T_G1_1,5,5 - Completely trust,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15243c,T_G1_1,6,98 - Don’t know,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15243d,T_G1_2,1,1 - Do not trust at all,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15243e,T_G1_2,2,2,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15243f,T_G1_2,3,3,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152440,T_G1_2,4,4,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152441,T_G1_2,5,5 - Completely trust,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152442,T_G1_2,6,98 - Don’t know,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152443,T_G1_3,1,1 - Do not trust at all,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152444,T_G1_3,2,2,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152445,T_G1_3,3,3,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152446,T_G1_3,4,4,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152447,T_G1_3,5,5 - Completely trust,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152448,T_G1_3,6,98 - Don’t know,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152449,T_G1_4,1,1 - Do not trust at all,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15244a,T_G1_4,2,2,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15244b,T_G1_4,3,3,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15244c,T_G1_4,4,4,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15244d,T_G1_4,5,5 - Completely trust,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15244e,T_G1_4,6,98 - Don’t know,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15244f,T_G1_5,1,1 - Do not trust at all,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152450,T_G1_5,2,2,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152451,T_G1_5,3,3,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152452,T_G1_5,4,4,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152453,T_G1_5,5,5 - Completely trust,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152454,T_G1_5,6,98 - Don’t know,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152455,T_G1_6,1,1 - Do not trust at all,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152456,T_G1_6,2,2,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152457,T_G1_6,3,3,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152458,T_G1_6,4,4,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152459,T_G1_6,5,5 - Completely trust,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15245a,T_G1_6,6,98 - Don’t know,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15245b,T_G1_7,1,1 - Do not trust at all,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15245c,T_G1_7,2,2,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15245d,T_G1_7,3,3,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15245e,T_G1_7,4,4,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15245f,T_G1_7,5,5 - Completely trust,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152460,T_G1_7,6,98 - Don’t know,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152461,T_G1_8,1,1 - Do not trust at all,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152462,T_G1_8,2,2,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152463,T_G1_8,3,3,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152464,T_G1_8,4,4,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152465,T_G1_8,5,5 - Completely trust,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152466,T_G1_8,6,98 - Don’t know,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152467,T_G1_9,1,1 - Do not trust at all,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152468,T_G1_9,2,2,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152469,T_G1_9,3,3,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15246a,T_G1_9,4,4,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15246b,T_G1_9,5,5 - Completely trust,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15246c,T_G1_9,6,98 - Don’t know,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15246d,T_G1_10,1,1 - Do not trust at all,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15246e,T_G1_10,2,2,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df15246f,T_G1_10,3,3,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152470,T_G1_10,4,4,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152471,T_G1_10,5,5 - Completely trust,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152472,T_G1_10,6,98 - Don’t know,"G1. On a scale of 1 to 5, where 1 is do not trust at all and 5 is completely trust, how much do you trust the following financial institutions? ",0
+6908795475810a88df152473,T_G2_1,1,1 - Not at all approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152474,T_G2_1,2,2,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152475,T_G2_1,3,3,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152476,T_G2_1,4,4,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152477,T_G2_1,5,5 - Very approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152478,T_G2_1,6,98 - Don’t know,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152479,T_G2_2,1,1 - Not at all approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15247a,T_G2_2,2,2,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15247b,T_G2_2,3,3,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15247c,T_G2_2,4,4,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15247d,T_G2_2,5,5 - Very approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15247e,T_G2_2,6,98 - Don’t know,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15247f,T_G2_3,1,1 - Not at all approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152480,T_G2_3,2,2,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152481,T_G2_3,3,3,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152482,T_G2_3,4,4,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152483,T_G2_3,5,5 - Very approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152484,T_G2_3,6,98 - Don’t know,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152485,T_G2_4,1,1 - Not at all approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152486,T_G2_4,2,2,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152487,T_G2_4,3,3,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152488,T_G2_4,4,4,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152489,T_G2_4,5,5 - Very approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15248a,T_G2_4,6,98 - Don’t know,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15248b,T_G2_5,1,1 - Not at all approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15248c,T_G2_5,2,2,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15248d,T_G2_5,3,3,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15248e,T_G2_5,4,4,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15248f,T_G2_5,5,5 - Very approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152490,T_G2_5,6,98 - Don’t know,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152491,T_G2_6,1,1 - Not at all approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152492,T_G2_6,2,2,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152493,T_G2_6,3,3,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152494,T_G2_6,4,4,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152495,T_G2_6,5,5 - Very approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152496,T_G2_6,6,98 - Don’t know,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152497,T_G2_7,1,1 - Not at all approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152498,T_G2_7,2,2,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df152499,T_G2_7,3,3,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15249a,T_G2_7,4,4,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15249b,T_G2_7,5,5 - Very approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15249c,T_G2_7,6,98 - Don’t know,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15249d,T_G2_8,1,1 - Not at all approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15249e,T_G2_8,2,2,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df15249f,T_G2_8,3,3,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524a0,T_G2_8,4,4,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524a1,T_G2_8,5,5 - Very approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524a2,T_G2_8,6,98 - Don’t know,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524a3,T_G2_9,1,1 - Not at all approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524a4,T_G2_9,2,2,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524a5,T_G2_9,3,3,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524a6,T_G2_9,4,4,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524a7,T_G2_9,5,5 - Very approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524a8,T_G2_9,6,98 - Don’t know,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524a9,T_G2_10,1,1 - Not at all approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524aa,T_G2_10,2,2,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524ab,T_G2_10,3,3,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524ac,T_G2_10,4,4,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524ad,T_G2_10,5,5 - Very approachable,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524ae,T_G2_10,6,98 - Don’t know,"G2. On a scale of 1 to 5, where 1 is not at all approachable and 5 is very approachable, to what extent do you think the following are approachable for you to access financial products and services?",0
+6908795475810a88df1524af,T_G3_1,1,Yes,G3. Which of the following community networks are you associated with?,0
+6908795475810a88df1524b0,T_G3_1,2,No,G3. Which of the following community networks are you associated with?,0
+6908795475810a88df1524b1,T_G3_2,1,Yes,G3. Which of the following community networks are you associated with?,0
+6908795475810a88df1524b2,T_G3_2,2,No,G3. Which of the following community networks are you associated with?,0
+6908795475810a88df1524b3,T_G3_3,1,Yes,G3. Which of the following community networks are you associated with?,0
+6908795475810a88df1524b4,T_G3_3,2,No,G3. Which of the following community networks are you associated with?,0
+6908795475810a88df1524b5,T_G3_4,1,Yes,G3. Which of the following community networks are you associated with?,0
+6908795475810a88df1524b6,T_G3_4,2,No,G3. Which of the following community networks are you associated with?,0
+6908795475810a88df1524b7,LGBTI support groups and community centers_G4,1,Yes,{0}\n\nG4. Have you ever received any support from them to access financial services?,0
+6908795475810a88df1524b8,LGBTI support groups and community centers_G4,2,No,{0}\n\nG4. Have you ever received any support from them to access financial services?,0
+6908795475810a88df1524b9,LGBTI support groups and community centers_G6,1,Not at all competent ,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524ba,LGBTI support groups and community centers_G6,2,Somewhat Competent ,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524bb,LGBTI support groups and community centers_G6,3,Very Competent,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524bc,LGBTI support groups and community centers_G6,4,Extremely competent,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524bd,LGBTI support groups and community centers_G6,5,Don’t know,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524be,LGBTI advocacy organizations_G4,1,Yes,{0}\n\nG4. Have you ever received any support from them to access financial services?,0
+6908795475810a88df1524bf,LGBTI advocacy organizations_G4,2,No,{0}\n\nG4. Have you ever received any support from them to access financial services?,0
+6908795475810a88df1524c0,LGBTI advocacy organizations_G6,1,Not at all competent ,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524c1,LGBTI advocacy organizations_G6,2,Somewhat Competent ,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524c2,LGBTI advocacy organizations_G6,3,Very Competent,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524c3,LGBTI advocacy organizations_G6,4,Extremely competent,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524c4,LGBTI advocacy organizations_G6,5,Don’t know,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524c5,Online LGBTI forums and groups_G4,1,Yes,{0}\n\nG4. Have you ever received any support from them to access financial services?,0
+6908795475810a88df1524c6,Online LGBTI forums and groups_G4,2,No,{0}\n\nG4. Have you ever received any support from them to access financial services?,0
+6908795475810a88df1524c7,Online LGBTI forums and groups_G6,1,Not at all competent ,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524c8,Online LGBTI forums and groups_G6,2,Somewhat Competent ,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524c9,Online LGBTI forums and groups_G6,3,Very Competent,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524ca,Online LGBTI forums and groups_G6,4,Extremely competent,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524cb,Online LGBTI forums and groups_G6,5,Don’t know,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524cc,Other Specify_G4,1,Yes,{0}\n\nG4. Have you ever received any support from them to access financial services?,0
+6908795475810a88df1524cd,Other Specify_G4,2,No,{0}\n\nG4. Have you ever received any support from them to access financial services?,0
+6908795475810a88df1524ce,Other Specify_G6,1,Not at all competent ,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524cf,Other Specify_G6,2,Somewhat Competent ,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524d0,Other Specify_G6,3,Very Competent,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524d1,Other Specify_G6,4,Extremely competent,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524d2,Other Specify_G6,5,Don’t know,G6. How competent are they to provide support in accessing financial services? ,0
+6908795475810a88df1524d3,G8,1,"Yes, online",G8. Have you attended any program/webinar/workshop on financial literacy in the last 2 years? ,0
+6908795475810a88df1524d4,G8,2,"Yes, offline",G8. Have you attended any program/webinar/workshop on financial literacy in the last 2 years? ,0
+6908795475810a88df1524d5,G8,3,No,G8. Have you attended any program/webinar/workshop on financial literacy in the last 2 years? ,0
+6908795475810a88df1524d6,a,1,Yes,"a. Thank you for providing your views and feedback, through this survey we want to reach out to a diverse group of community members from LGBTI, would you agree to refer others from the community to take part in this survey? ",0
+6908795475810a88df1524d7,a,2,No,"a. Thank you for providing your views and feedback, through this survey we want to reach out to a diverse group of community members from LGBTI, would you agree to refer others from the community to take part in this survey? ",0
+6908795475810a88df1524d8,c,1,At home,c. Please indicate the setting in which the interview was carried out:,0
+6908795475810a88df1524d9,c,2,At work place,c. Please indicate the setting in which the interview was carried out:,0
+6908795475810a88df1524da,c,3,In a group/ community setting ,c. Please indicate the setting in which the interview was carried out:,0
+6908795475810a88df1524db,d,1,Only respondent,d. Was anyone else responding to questions that were asked?,0
+6908795475810a88df1524dc,d,2,Respondents’ partner,d. Was anyone else responding to questions that were asked?,0
+6908795475810a88df1524dd,d,3,Respondents’ family,d. Was anyone else responding to questions that were asked?,0
+6908795475810a88df1524de,e,1,All responses provided by the respondent,e. Who provided the responses to the questions?,0
+6908795475810a88df1524df,e,2,"For a few questions (less than 5), another respondent intervened",e. Who provided the responses to the questions?,0
+6908795475810a88df1524e0,e,3,"For most questions, another person present intervened",e. Who provided the responses to the questions?,0
+6908795475810a88df1524e1,f,1,Comfortable,f. How would you rate the respondent's participation?,0
+6908795475810a88df1524e2,f,2,Interested and engaged,f. How would you rate the respondent's participation?,0
+6908795475810a88df1524e3,f,3,Not so interested,f. How would you rate the respondent's participation?,0
+6908795475810a88df1524e4,f,4,Not attentive/ distracted,f. How would you rate the respondent's participation?,0
+6908795475810a88df1524e5,f,5,Worried and anxious,f. How would you rate the respondent's participation?,0
+6908795475810a88df1524e6,h,1,Know them personally   ,h. How do you know the respondent?,0
+6908795475810a88df1524e7,h,2,Know them through friend/peer/ colleague,h. How do you know the respondent?,0
+6908795475810a88df1524e8,h,3,Referred by another respondent,h. How do you know the respondent?,0
+6908795475810a88df1524e9,h,4,Through organisation/ network,h. How do you know the respondent?,0
+6908795475810a88df1524ea,h,5,Through an organization. Please mention the name:,h. How do you know the respondent?,0
+6908795475810a88df1524eb,Q_113_S,1,Know them personally   ,h. How do you know the respondent?,0
+6908795475810a88df1524ec,Q_113_S,2,Know them through friend/peer/ colleague,h. How do you know the respondent?,0
+6908795475810a88df1524ed,Q_113_S,3,Referred by another respondent,h. How do you know the respondent?,0
+6908795475810a88df1524ee,Q_113_S,4,Through organisation/ network,h. How do you know the respondent?,0
+6908795475810a88df1524ef,Q_113_S,5,Through an organization. Please mention the name:,h. How do you know the respondent?,0

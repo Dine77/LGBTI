@@ -28,6 +28,7 @@ export default function App() {
       // If backend returns an object with a token (JWT), store it and redirect
       if (result && typeof result === "object" && result.token) {
         localStorage.setItem("token", result.token);
+        localStorage.setItem("role", result.role);
         // default redirect after successful login
         window.location.href = "/ResearchOverview";
         return;
@@ -36,6 +37,7 @@ export default function App() {
       // If backend returns a simple status string, handle legacy responses
       if (typeof result === "string") {
         const trimmed = result.trim();
+        console.log(trimmed);
         if (trimmed === "user") {
           // after successful login
           localStorage.setItem("token", result.token); // token from backend
@@ -44,7 +46,8 @@ export default function App() {
         }
         if (trimmed === "Client") {
           localStorage.setItem("token", result.token); // token from backend
-          window.location.href = "/ResearchOverviewC";
+          localStorage.setItem("role", "client");
+          // window.location.href = "/ResearchOverview";
           return;
         }
         if (trimmed === "allow") {
